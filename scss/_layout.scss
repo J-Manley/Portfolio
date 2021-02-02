@@ -1,0 +1,11 @@
+@use "base.scss" as *;
+
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+//Mobile
+// <a href="mailto:someone@yoursite.com">Email Us</a>

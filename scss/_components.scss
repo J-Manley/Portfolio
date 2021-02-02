@@ -1,0 +1,144 @@
+@use "base.scss" as *;
+
+// Buttons
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: $primary-color;
+    background-color: $accent-color;
+  }
+}
+
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color;
+  color: $secondary-color;
+  border-bottom: 2px solid $secondary-color;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  ul {
+    display: flex;
+    margin-left: 1.5rem;
+  }
+
+  li {
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+  }
+}
+
+.navBar__logo {
+  width: 90px;
+  height: 90px;
+}
+
+.navBar__icon {
+  margin-right: 0.5rem;
+  color: $secondary-color;
+}
+
+#hero {
+  height: 100vh;
+  color: $secondary-color;
+}
+
+.hero__content {
+  padding-top: 10%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#about {
+  margin-bottom: 20rem;
+}
+
+.about__text {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.projects__cards {
+  position: relative;
+  height: 350px;
+  max-width: 1050px;
+  width: 100%;
+  margin: 0 auto 10rem auto;
+  background-color: $secondary-color;
+  color: $primary-color;
+  overflow: hidden;
+}
+
+.projects__card__left {
+  position: absolute;
+  left: 25%;
+  height: 350px;
+  max-width: 500px;
+  width: 100%;
+
+  &:hover {
+    transform: translateX(-254px);
+    transition: all ease-out 1s;
+    box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.projects__card__right {
+  position: absolute;
+  right: 0;
+  height: 350px;
+  max-width: 500px;
+  width: 100%;
+  background-color: #e25822;
+  display: none;
+}
+
+// Paris
+.projects__card--1 {
+  background: url(../dist/img/placeholder-1.jpg);
+  box-shadow: inset 0 0 75px 180px rgba(0, 0, 0, 0.6);
+
+  &:hover {
+  }
+}
+
+.projects__card--1a {
+}
+
+.projects__card--2 {
+  background: url(../dist/img/placeholder-2.jpg) center center/cover no-repeat;
+}
+
+.projects__card--2a {
+}
+
+.projects__card--3 {
+  background: url(../dist/img/placeholder-3.jpg) center center/cover no-repeat;
+}
+
+.projects__card--3a {
+}
+
+.projects__card--4 {
+  background: url(../dist/img/placeholder-4.jpg) center center/cover no-repeat;
+}
+
+.projects__card--4a {
+}
+
+#footer {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
