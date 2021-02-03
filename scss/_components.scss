@@ -76,7 +76,7 @@
   max-width: 1100px;
   width: 100%;
   margin: 0 auto 10rem auto;
-  background-color: $secondary-color;
+  // background-color: $secondary-color;
   color: $primary-color;
   overflow: hidden;
   display: flex;
@@ -84,12 +84,11 @@
   align-items: center;
 
   &:hover > div:first-child {
-    transition: 1s;
     transform: translateX(-56%);
   }
   &:hover .projects__card--1a {
     opacity: 1;
-    transform: translateX(56%);
+    transform: translateX(50%);
   }
 }
 
@@ -98,7 +97,8 @@
   height: 350px;
   max-width: 500px;
   width: 100%;
-  transition: 1s;
+  z-index: 2;
+  transition: transform 500ms ease-in;
 
   &::before {
     content: "";
@@ -108,22 +108,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    transition: 1s;
-  }
-
-  &:hover::before {
   }
 }
-
-// %projects__card__right {
-//   position: absolute;
-//   right: 0;
-//   height: 350px;
-//   max-width: 500px;
-//   width: 100%;
-//   background-color: #e25822;
-//   display: none;
-// }
 
 .projects__card--1a {
   position: absolute;
@@ -132,7 +118,7 @@
   width: 100%;
   background-color: #e25822;
   opacity: 0;
-  transition: 2s;
+  transition: transform, opacity, 500ms ease-in;
 }
 
 .projects__card--2 {
