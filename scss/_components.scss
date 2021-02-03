@@ -86,19 +86,23 @@
   &:hover > div:first-child {
     transform: translateX(-56%);
   }
-  &:hover .projects__card--1a {
+  &:hover .projects__card__right {
     opacity: 1;
     transform: translateX(50%);
   }
 }
 
-.projects__card--1 {
+.projects__card__left {
   position: absolute;
   height: 350px;
   max-width: 500px;
   width: 100%;
   z-index: 2;
-  transition: transform 500ms ease-in;
+  transition: transform 750ms ease;
+
+  & > img {
+    border-radius: 5px;
+  }
 
   &::before {
     content: "";
@@ -108,17 +112,19 @@
     right: 0;
     bottom: 0;
     left: 0;
+    border-radius: 5px;
   }
 }
 
-.projects__card--1a {
+.projects__card__right {
   position: absolute;
   height: 350px;
   max-width: 500px;
   width: 100%;
   background-color: #e25822;
   opacity: 0;
-  transition: transform, opacity, 500ms ease-in;
+  transition: transform, opacity, 750ms ease;
+  border-radius: 5px;
 }
 
 .projects__card--2 {
