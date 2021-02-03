@@ -433,16 +433,24 @@ a {
   color: #fbfbf2;
   overflow: hidden;
 }
+.projects__cards:hover > div {
+  transition: 1s;
+  transform: translateX(-200px);
+  background: rgba(0, 0, 0, 0);
+}
 
-.projects__card--4, .projects__card--3, .projects__card--2, .projects__card--1 {
+.projects__card--1 {
   position: absolute;
-  left: 25%;
   height: 350px;
   max-width: 500px;
   width: 100%;
+  top: 50%;
+  left: 50%;
+  margin-top: -175px;
+  margin-left: -250px;
   transition: 1s;
 }
-.projects__card--4::before, .projects__card--3::before, .projects__card--2::before, .projects__card--1::before {
+.projects__card--1::before {
   content: "";
   background: rgba(0, 0, 255, 0.5);
   position: absolute;
@@ -452,24 +460,6 @@ a {
   left: 0;
   transition: 1s;
 }
-.projects__card--4:hover::before, .projects__card--3:hover::before, .projects__card--2:hover::before, .projects__card--1:hover::before {
-  background: rgba(0, 0, 0, 0);
-}
-.projects__card--4:hover, .projects__card--3:hover, .projects__card--2:hover, .projects__card--1:hover {
-  transition: 1s;
-  transform: translateX(-254px);
-}
-
-.projects__card--4a, .projects__card--3a, .projects__card--2a, .projects__card--1a {
-  position: absolute;
-  right: 0;
-  height: 350px;
-  max-width: 500px;
-  width: 100%;
-  background-color: #e25822;
-  display: none;
-}
-
 #footer {
   background-color: #4a4a48;
   color: #fbfbf2;
