@@ -426,17 +426,23 @@ a {
 .projects__cards {
   position: relative;
   height: 350px;
-  max-width: 1050px;
+  max-width: 1100px;
   width: 100%;
   margin: 0 auto 10rem auto;
   background-color: #4a4a48;
   color: #fbfbf2;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.projects__cards:hover > div {
+.projects__cards:hover > div:first-child {
   transition: 1s;
-  transform: translateX(-200px);
-  background: rgba(0, 0, 0, 0);
+  transform: translateX(-56%);
+}
+.projects__cards:hover .projects__card--1a {
+  opacity: 1;
+  transform: translateX(56%);
 }
 
 .projects__card--1 {
@@ -444,10 +450,6 @@ a {
   height: 350px;
   max-width: 500px;
   width: 100%;
-  top: 50%;
-  left: 50%;
-  margin-top: -175px;
-  margin-left: -250px;
   transition: 1s;
 }
 .projects__card--1::before {
@@ -460,6 +462,16 @@ a {
   left: 0;
   transition: 1s;
 }
+.projects__card--1a {
+  position: absolute;
+  height: 350px;
+  max-width: 500px;
+  width: 100%;
+  background-color: #e25822;
+  opacity: 0;
+  transition: 2s;
+}
+
 #footer {
   background-color: #4a4a48;
   color: #fbfbf2;
