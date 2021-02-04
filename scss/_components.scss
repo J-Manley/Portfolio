@@ -18,6 +18,8 @@
   }
 }
 
+// Navbar
+
 #navBar {
   display: flex;
   justify-content: space-between;
@@ -50,6 +52,8 @@
   color: $secondary-color;
 }
 
+// Hero Section
+
 #hero {
   height: 100vh;
   color: $secondary-color;
@@ -69,6 +73,8 @@
   max-width: 700px;
   margin: 0 auto;
 }
+
+// Project Section
 
 .projects__cards {
   position: relative;
@@ -118,20 +124,6 @@
     border-radius: 5px;
     transition: background-color 750ms ease;
   }
-
-  &::after {
-    content: "Project Title";
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    width: 150px;
-    height: 75px;
-    transform: translate(-50%, -60%);
-    border-radius: 5px;
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-    border: 2px solid red;
-  }
 }
 
 .projects__card__right {
@@ -145,19 +137,81 @@
   border-radius: 5px;
 }
 
+.projects__card--1 {
+  &::after {
+    content: "Project 1";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 150px;
+    height: 40px;
+    transform: translate(-50%, -60%);
+    border-radius: 5px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    background-color: $secondary-color;
+    transition: opacity 500ms ease;
+  }
+}
+
+.projects__card--1a {
+}
+
 .projects__card--2 {
+  &::after {
+    content: "Project 2";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 150px;
+    height: 40px;
+    transform: translate(-50%, -60%);
+    border-radius: 5px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    background-color: $secondary-color;
+    transition: opacity 500ms ease;
+  }
 }
 
 .projects__card--2a {
 }
 
 .projects__card--3 {
+  &::after {
+    content: "Project 3";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 150px;
+    height: 40px;
+    transform: translate(-50%, -60%);
+    border-radius: 5px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    background-color: $secondary-color;
+    transition: opacity 500ms ease;
+  }
 }
 
 .projects__card--3a {
 }
 
 .projects__card--4 {
+  &::after {
+    content: "Project 4";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 150px;
+    height: 40px;
+    transform: translate(-50%, -60%);
+    border-radius: 5px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    background-color: $secondary-color;
+    transition: opacity 500ms ease;
+  }
 }
 
 .projects__card--4a {
@@ -166,4 +220,7 @@
 #footer {
   background-color: $secondary-color;
   color: $primary-color;
+  // position: sticky;
+  // bottom: 0;
+  // z-index: -1;
 }
