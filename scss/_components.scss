@@ -72,8 +72,8 @@
 
 .projects__cards {
   position: relative;
-  height: 350px;
-  max-width: 1100px;
+  height: 355px;
+  max-width: 1125px;
   width: 100%;
   margin: 0 auto 10rem auto;
   // background-color: $secondary-color;
@@ -84,21 +84,24 @@
   align-items: center;
 
   &:hover > div:first-child {
-    transform: translateX(-56%);
+    transform: translateX(-54%);
   }
   &:hover .projects__card__right {
     opacity: 1;
     transform: translateX(50%);
+  }
+  &:hover .projects__card__left::before {
+    background-color: rgba(255, 255, 255, 0);
   }
 }
 
 .projects__card__left {
   position: absolute;
   height: 350px;
-  max-width: 500px;
+  max-width: 525px;
   width: 100%;
   z-index: 2;
-  transition: transform 750ms ease;
+  transition: transform, 750ms ease;
 
   & > img {
     border-radius: 5px;
@@ -106,20 +109,35 @@
 
   &::before {
     content: "";
-    background: rgba(0, 0, 255, 0.5);
+    background-color: rgba(7, 42, 200, 0.65);
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     border-radius: 5px;
+    transition: background-color 750ms ease;
+  }
+
+  &::after {
+    content: "Project Title";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 150px;
+    height: 75px;
+    transform: translate(-50%, -60%);
+    border-radius: 5px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    border: 2px solid red;
   }
 }
 
 .projects__card__right {
   position: absolute;
   height: 350px;
-  max-width: 500px;
+  max-width: 525px;
   width: 100%;
   background-color: #e25822;
   opacity: 0;
