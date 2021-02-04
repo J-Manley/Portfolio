@@ -417,11 +417,16 @@ a {
 
 #about {
   margin-bottom: 20rem;
+  padding-top: 100px;
 }
 
 .about__text {
   max-width: 700px;
   margin: 0 auto;
+}
+
+#projects {
+  padding-top: 100px;
 }
 
 .projects__cards {
@@ -445,6 +450,9 @@ a {
 }
 .projects__cards:hover .projects__card__left::before {
   background-color: rgba(255, 255, 255, 0);
+}
+.projects__cards:hover .projects__card--1::after {
+  opacity: 0;
 }
 
 .projects__card__left {
@@ -493,7 +501,7 @@ a {
   font-size: 1.875rem;
   line-height: 2.25rem;
   background-color: #4a4a48;
-  transition: opacity 500ms ease;
+  transition: opacity 300ms ease;
 }
 
 .projects__card--2::after {
@@ -539,6 +547,10 @@ a {
   line-height: 2.25rem;
   background-color: #4a4a48;
   transition: opacity 500ms ease;
+}
+
+#contact {
+  padding-top: 100px;
 }
 
 #footer {
