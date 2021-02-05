@@ -14,6 +14,7 @@
 #73937E - Sage
 #4F6272 - Black Coral
 #6F8695 - Light Slate Gray
+#767468 - Gray
 #4A4A48 - Davys Gray
 #496A81 - Dark Electric Blue
 #1E2749 - Dark Blue
@@ -21,6 +22,7 @@
 #004777 - Indigo Blue
 #3581B8 - Steel Blue
 #072ac8 - Persian Blue
+#819B8F - Green
 
 
 Combinations of individual colours
