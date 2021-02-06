@@ -360,7 +360,7 @@ a {
   line-height: 1;
 }
 
-.btn-main {
+.btn-secondary, .btn-main {
   display: inline-block;
   padding: 0.8rem 2rem;
   border-radius: 5px;
@@ -372,6 +372,11 @@ a {
 .btn-main {
   color: #fbfbf2;
   background-color: #0625b4;
+}
+.btn-secondary {
+  color: #4a4a48;
+  background-color: #fbfbf2;
+  padding: 0.7rem 1rem;
 }
 
 #navBar {
@@ -431,7 +436,7 @@ a {
 
 .projects__cards {
   position: relative;
-  height: 450px;
+  height: 430px;
   max-width: 1125px;
   width: 100%;
   margin: 0 auto 10rem auto;
@@ -466,7 +471,7 @@ a {
 
 .projects__card__left {
   position: absolute;
-  height: 450px;
+  height: 430px;
   max-width: 525px;
   width: 100%;
   z-index: 2;
@@ -489,7 +494,7 @@ a {
 
 .projects__card__right {
   position: absolute;
-  height: 450px;
+  height: 430px;
   max-width: 525px;
   width: 100%;
   background-color: #4a4a48;
@@ -535,6 +540,12 @@ a {
 
 .projects__built div:nth-of-type(3) {
   margin-right: 0.85rem;
+}
+
+.projects__links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .projects__card--1::after {

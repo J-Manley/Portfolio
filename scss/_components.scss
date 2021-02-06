@@ -16,6 +16,13 @@
     color: $primary-color;
     background-color: $accent-color;
   }
+
+  &-secondary {
+    @extend %btn-shared;
+    color: $secondary-color;
+    background-color: $primary-color;
+    padding: 0.7rem 1rem;
+  }
 }
 
 // Navbar
@@ -83,7 +90,7 @@
 
 .projects__cards {
   position: relative;
-  height: 450px;
+  height: 430px;
   max-width: 1125px;
   width: 100%;
   margin: 0 auto 10rem auto;
@@ -120,7 +127,7 @@
 
 .projects__card__left {
   position: absolute;
-  height: 450px;
+  height: 430px;
   max-width: 525px;
   width: 100%;
   z-index: 2;
@@ -145,7 +152,7 @@
 
 .projects__card__right {
   position: absolute;
-  height: 450px;
+  height: 430px;
   max-width: 525px;
   width: 100%;
   background-color: $secondary-color;
@@ -166,6 +173,7 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  // margin-bottom: 0.75rem;
 }
 
 .projects__logo {
@@ -192,6 +200,12 @@
 
 .projects__built div:nth-of-type(3) {
   margin-right: 0.85rem;
+}
+
+.projects__links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .projects__card--1 {
