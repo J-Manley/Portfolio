@@ -83,7 +83,7 @@
 
 .projects__cards {
   position: relative;
-  height: 355px;
+  height: 450px;
   max-width: 1125px;
   width: 100%;
   margin: 0 auto 10rem auto;
@@ -120,7 +120,7 @@
 
 .projects__card__left {
   position: absolute;
-  height: 350px;
+  height: 450px;
   max-width: 525px;
   width: 100%;
   z-index: 2;
@@ -145,7 +145,7 @@
 
 .projects__card__right {
   position: absolute;
-  height: 350px;
+  height: 450px;
   max-width: 525px;
   width: 100%;
   background-color: $secondary-color;
@@ -162,12 +162,36 @@
   max-width: 400px;
 }
 
-.projects__logos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.projects__tech {
   width: 100%;
-  height: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.projects__logo {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+
+  > img {
+    width: auto;
+  }
+}
+
+.projects__design > p {
+  margin-bottom: 0.5rem;
+}
+
+.projects__built > p {
+  margin-bottom: 0.5rem;
+}
+
+.projects__built {
+  flex: 0 1 40%;
+}
+
+.projects__built div:nth-of-type(3) {
+  margin-right: 0.85rem;
 }
 
 .projects__card--1 {
