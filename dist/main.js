@@ -1,12 +1,24 @@
-// myID = document.getElementsByClassName("projects__card__right");
+// Sticky menu background
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 150) {
+    document.querySelector("#navBar").style.opacity = 0.9;
+  } else {
+    document.querySelector("#navBar").style.opacity = 1;
+  }
+});
 
-// var myScrollFunc = function () {
-//   var y = window.scrollY;
-//   if (y >= 800) {
-//     myID.className = "bottomMenu show";
-//   } else {
-//     myID.className = "bottomMenu hide";
+// // Smooth Scrolling
+// $("#navbar a, .btn").on("click", function (event) {
+//   if (this.hash !== "") {
+//     event.preventDefault();
+
+//     const hash = this.hash;
+
+//     $("html, body").animate(
+//       {
+//         scrollTop: $(hash).offset().top - 100,
+//       },
+//       800
+//     );
 //   }
-// };
-
-// window.addEventListener("scroll", myScrollFunc);
+// });

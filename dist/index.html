@@ -78,7 +78,7 @@
             voluptatum
             minus dicta est distinctio commodi quis obcaecati dignissimos quod, delectus alias consequuntur odio cum
             corporis? Perspiciatis temporibus eaque aperiam.</p>
-          <div class="projects__tech p-1 mb-1">
+          <div class="projects__tech p-1">
             <div class="projects__design">
               <p>Designed with:</p>
               <div class="projects__logo"><img src="./img/adobe-xd.png" alt="adobe xd logo" title="Adobe XD" /></div>
@@ -112,7 +112,7 @@
             voluptatum
             minus dicta est distinctio commodi quis obcaecati dignissimos quod, delectus alias consequuntur odio cum
             corporis? Perspiciatis temporibus eaque aperiam.</p>
-          <div class="projects__tech p-1 mb-1">
+          <div class="projects__tech p-1">
             <div class="projects__design">
               <p>Designed with:</p>
               <div class="projects__logo"><img src="./img/adobe-xd.png" alt="adobe xd logo" title="Adobe XD" /></div>
@@ -146,7 +146,7 @@
             voluptatum
             minus dicta est distinctio commodi quis obcaecati dignissimos quod, delectus alias consequuntur odio cum
             corporis? Perspiciatis temporibus eaque aperiam.</p>
-          <div class="projects__tech p-1 mb-1">
+          <div class="projects__tech p-1">
             <div class="projects__design">
               <p>Designed with:</p>
               <div class="projects__logo"><img src="./img/adobe-xd.png" alt="adobe xd logo" title="Adobe XD" /></div>
@@ -180,7 +180,7 @@
             voluptatum
             minus dicta est distinctio commodi quis obcaecati dignissimos quod, delectus alias consequuntur odio cum
             corporis? Perspiciatis temporibus eaque aperiam.</p>
-          <div class="projects__tech p-1 mb-1">
+          <div class="projects__tech p-1">
             <div class="projects__design">
               <p>Designed with:</p>
               <div class="projects__logo"><img src="./img/adobe-xd.png" alt="adobe xd logo" title="Adobe XD" /></div>
@@ -208,7 +208,25 @@
   </section>
   <!-- End Projects -->
   <!-- Contact -->
-
+  <section id="contact" class="text-center py-3">
+    <div class="container">
+      <h2 class="contact__title">Contact Me</h2>
+      <p class="contact__text">Here is how you can reach me</p>
+      <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <div class="contact__form">
+          <input type="text" class="text-input name-input" placeholder="Name" name="name" />
+          <input type="text" class="text-input subject-input" placeholder="Subject" name="subject" />
+          <input type="email" class="text-input email-input" placeholder="Email Address" name="email" />
+          <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone" />
+          <textarea class="text-input message-input" placeholder="Enter Message" name="message"></textarea>
+          <div class="my-2">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+        </div>
+        <button type="submit" class="btn-main">Submit</button>
+      </form>
+    </div>
+  </section>
   <!-- End Contact -->
   <!-- Footer -->
   <footer id="footer" class="text-center py-2">
@@ -217,7 +235,7 @@
     </div>
   </footer>
 
-
+  <script src="./main.js"></script>
 </body>
 
 </html>
