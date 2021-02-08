@@ -134,7 +134,7 @@
     z-index: 2;
     transition: transform, 750ms ease;
 
-    & > img {
+    > img {
       border-radius: 5px;
     }
 
@@ -295,27 +295,47 @@
 }
 
 #contact {
-  padding: 10rem 0 15rem 0;
+  padding: 10rem 0 6rem 0;
 
   .contact__form {
     display: flex;
     flex-direction: column;
-    flex: 0 1 auto;
-    max-width: 50%;
+    align-items: center;
+    margin: auto;
+    background-color: $secondary-color;
+    width: 75%;
+    border-radius: 5px;
+
+    &__text-fields {
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+    }
 
     .text-input {
-      padding: 0.5rem 1 rem;
+      padding: 0.5rem 1rem;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid $primary-color;
+    }
+
+    .message-input {
+      height: 100px;
     }
   }
+
   button[type="submit"] {
     width: 50%;
+    background-color: $primary-color;
+    color: $secondary-color;
   }
 }
 
-#footer {
+.footer__content {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  top: 0;
   background-color: $secondary-color;
   color: $primary-color;
-  // position: sticky;
-  // bottom: 0;
-  // z-index: -1;
 }

@@ -16,6 +16,9 @@ body {
   background: $primary-color;
   font-family: $font-family;
   color: $secondary-color;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 
 img {
@@ -37,6 +40,11 @@ ul {
 a {
   text-decoration: none;
   color: $secondary-color;
+}
+
+label {
+  color: $primary-color;
+  text-align: left;
 }
 
 .text-center {

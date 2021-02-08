@@ -59,7 +59,8 @@
     <div class="container">
       <h2 class="about__title text-6xl mb-2">About Me</h2>
       <p class="about__text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum temporibus natus, voluptatum doloremque dolorem
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum temporibus natus, voluptatum doloremque
+        dolorem
         officiis iusto exercitationem! Sequi amet aperiam, quisquam harum quis sint quos praesentium. Suscipit natus
         cumque quae.
       </p>
@@ -88,7 +89,8 @@
               <div class="projects__logo"><img src="./img/html-logo.png" alt="html5 logo" title="HTML5" /></div>
               <div class="projects__logo"><img src="./img/css-logo.png" alt="css3 logo" title="CSS3" /></div>
               <div class="projects__logo"><img src="./img/sass-logo.png" alt="sass logo" title="SASS" /></div>
-              <div class="projects__logo"><img src="./img/js-logo.png" alt="javascript logo" title="Javascript" /></div>
+              <div class="projects__logo"><img src="./img/js-logo.png" alt="javascript logo" title="Javascript" />
+              </div>
             </div>
           </div>
           <div class="projects__links pt-1 px-2">
@@ -122,7 +124,8 @@
               <div class="projects__logo"><img src="./img/html-logo.png" alt="html5 logo" title="HTML5" /></div>
               <div class="projects__logo"><img src="./img/css-logo.png" alt="css3 logo" title="CSS3" /></div>
               <div class="projects__logo"><img src="./img/sass-logo.png" alt="sass logo" title="SASS" /></div>
-              <div class="projects__logo"><img src="./img/js-logo.png" alt="javascript logo" title="Javascript" /></div>
+              <div class="projects__logo"><img src="./img/js-logo.png" alt="javascript logo" title="Javascript" />
+              </div>
             </div>
           </div>
           <div class="projects__links pt-1 px-2">
@@ -156,7 +159,8 @@
               <div class="projects__logo"><img src="./img/html-logo.png" alt="html5 logo" title="HTML5" /></div>
               <div class="projects__logo"><img src="./img/css-logo.png" alt="css3 logo" title="CSS3" /></div>
               <div class="projects__logo"><img src="./img/sass-logo.png" alt="sass logo" title="SASS" /></div>
-              <div class="projects__logo"><img src="./img/js-logo.png" alt="javascript logo" title="Javascript" /></div>
+              <div class="projects__logo"><img src="./img/js-logo.png" alt="javascript logo" title="Javascript" />
+              </div>
             </div>
           </div>
           <div class="projects__links pt-1 px-2">
@@ -190,7 +194,8 @@
               <div class="projects__logo"><img src="./img/html-logo.png" alt="html5 logo" title="HTML5" /></div>
               <div class="projects__logo"><img src="./img/css-logo.png" alt="css3 logo" title="CSS3" /></div>
               <div class="projects__logo"><img src="./img/sass-logo.png" alt="sass logo" title="SASS" /></div>
-              <div class="projects__logo"><img src="./img/js-logo.png" alt="javascript logo" title="Javascript" /></div>
+              <div class="projects__logo"><img src="./img/js-logo.png" alt="javascript logo" title="Javascript" />
+              </div>
             </div>
           </div>
           <div class="projects__links pt-1 px-2">
@@ -211,26 +216,27 @@
   <section id="contact" class="text-center">
     <div class="container">
       <h2 class="contact__title text-6xl mb-4">Contact Me</h2>
-      <p class="contact__text mb-2 text-xl">Here is how you can reach me</p>
-      <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
-        <div class="contact__form">
-          <input type="text" class="text-input name-input" placeholder="Name" name="name" />
-          <input type="text" class="text-input subject-input" placeholder="Subject" name="subject" />
-          <input type="email" class="text-input email-input" placeholder="Email Address" name="email" />
-          <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone" />
+      <form class="contact__form" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <div class="contact__form__text-fields pt-2">
+          <label for="name" class="text-sm">Name</label>
+          <input type="text" class="text-input name-input mb-1" placeholder="Enter Name" name="name" />
+          <label for="email" class="text-sm">Email</label>
+          <input type="email" class="text-input email-input mb-1" placeholder="Enter Email Address" name="email" />
+          <label for="phone" class="text-sm">Phone No.</label>
+          <input type="text" class="text-input phone-input mb-1" placeholder="Enter Phone No." name="phone" />
+          <label for="message" class="text-sm">Message</label>
           <textarea class="text-input message-input" placeholder="Enter Message" name="message"></textarea>
-          <div class="my-2">
+          <div class="my-1">
             <div data-netlify-recaptcha="true"></div>
           </div>
         </div>
-        <button type="submit" class="btn-main">Submit</button>
+        <button type="submit" class="btn-main mb-1">Submit</button>
       </form>
     </div>
   </section>
-  <!-- End Contact -->
   <!-- Footer -->
-  <footer id="footer" class="text-center py-2">
-    <div class="footer__content">
+  <footer id="footer">
+    <div class="footer__content text-center py-5">
       <p class="footer__text"> Footer Text</p>
     </div>
   </footer>
