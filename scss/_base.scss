@@ -43,8 +43,18 @@ a {
 }
 
 label {
-  color: $primary-color;
+  color: $secondary-color;
   text-align: left;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+}
+
+textarea {
+  resize: none;
 }
 
 .text-center {
