@@ -11,17 +11,65 @@
 }
 
 .btn {
-  &-main {
+  &__main {
     @extend %btn-shared;
     color: $primary-color;
     background-color: $accent-color;
+    position: relative;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    background: transparent;
+    outline: none;
+    transition: all 250ms ease;
   }
 
-  &-secondary {
+  &__secondary {
     @extend %btn-shared;
     color: $secondary-color;
     background-color: $primary-color;
     padding: 0.7rem 1rem;
+  }
+
+  &__hero {
+    @extend %btn-shared;
+    width: 150px;
+    height: 50px;
+    line-height: 48px;
+    padding: 0;
+    border: none;
+    background: rgb(6, 37, 180);
+
+    &:hover {
+      color: $accent-color;
+      font-size: 1.1rem;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 2px;
+      width: 0;
+      background: $accent-color;
+      box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
+      transition: all 400ms ease;
+    }
+    &:after {
+      right: inherit;
+      top: inherit;
+      left: 0;
+      bottom: 0;
+    }
+    &:hover:before,
+    &:hover:after {
+      width: 100%;
+      transition: all 750ms ease;
+    }
   }
 }
 
@@ -37,6 +85,11 @@
   position: sticky;
   top: 0;
   z-index: 3;
+
+  .navBar__logo {
+    width: 90px;
+    height: 90px;
+  }
 
   ul {
     display: flex;
@@ -66,15 +119,15 @@
     }
   }
 
-  .navBar__logo {
-    width: 90px;
-    height: 90px;
-  }
-
   .navBar__icon {
+    display: inline-block;
     margin-right: 0.5rem;
     color: $primary-color;
-    position: relative;
+    transition: transform, opacity, 250ms ease;
+
+    &:hover {
+      transform: translateY(-10%);
+    }
   }
 }
 
@@ -197,7 +250,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
   }
 
   .projects__logo {
@@ -230,6 +283,15 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+
+    &__icon svg {
+      transition: transform, padding-left, 250ms ease;
+    }
+
+    &__icon:hover svg {
+      transform: scale(1.5);
+      padding-left: 0.1rem;
+    }
   }
 
   .projects__card--1 {
@@ -362,6 +424,7 @@
     background-color: $secondary-color;
     color: $primary-color;
     font-family: $font-family;
+    padding: 0.8rem 2rem;
   }
 }
 

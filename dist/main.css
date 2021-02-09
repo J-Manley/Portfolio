@@ -378,7 +378,7 @@ textarea {
   line-height: 1;
 }
 
-.btn-secondary, .btn-main {
+.btn__hero, .btn__secondary, .btn__main {
   display: inline-block;
   padding: 0.8rem 2rem;
   border-radius: 5px;
@@ -387,14 +387,54 @@ textarea {
   cursor: pointer;
 }
 
-.btn-main {
+.btn__main {
   color: #fbfbf2;
   background-color: #0625b4;
+  position: relative;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  outline: none;
+  transition: all 250ms ease;
 }
-.btn-secondary {
+.btn__secondary {
   color: #000;
   background-color: #fbfbf2;
   padding: 0.7rem 1rem;
+}
+.btn__hero {
+  width: 150px;
+  height: 50px;
+  line-height: 48px;
+  padding: 0;
+  border: none;
+  background: #0625b4;
+}
+.btn__hero:hover {
+  color: #0625b4;
+  font-size: 1.1rem;
+  background: transparent;
+  box-shadow: none;
+}
+.btn__hero:before, .btn__hero:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #0625b4;
+  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
+  transition: all 400ms ease;
+}
+.btn__hero:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.btn__hero:hover:before, .btn__hero:hover:after {
+  width: 100%;
+  transition: all 750ms ease;
 }
 
 #navBar {
@@ -407,6 +447,10 @@ textarea {
   position: sticky;
   top: 0;
   z-index: 3;
+}
+#navBar .navBar__logo {
+  width: 90px;
+  height: 90px;
 }
 #navBar ul {
   display: flex;
@@ -433,14 +477,14 @@ textarea {
   transform: scaleX(1);
   transform-origin: left;
 }
-#navBar .navBar__logo {
-  width: 90px;
-  height: 90px;
-}
 #navBar .navBar__icon {
+  display: inline-block;
   margin-right: 0.5rem;
   color: #fbfbf2;
-  position: relative;
+  transition: transform, opacity, 250ms ease;
+}
+#navBar .navBar__icon:hover {
+  transform: translateY(-10%);
 }
 
 #hero {
@@ -545,7 +589,7 @@ textarea {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 #projects .projects__logo {
   display: inline-block;
@@ -571,6 +615,13 @@ textarea {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+}
+#projects .projects__links__icon svg {
+  transition: transform, padding-left, 250ms ease;
+}
+#projects .projects__links__icon:hover svg {
+  transform: scale(1.5);
+  padding-left: 0.1rem;
 }
 #projects .projects__card--1::after {
   content: "Project 1";
@@ -672,6 +723,7 @@ textarea {
   background-color: #000;
   color: #fbfbf2;
   font-family: "Poppins", helvetica, sans-serif;
+  padding: 0.8rem 2rem;
 }
 
 #footer {
