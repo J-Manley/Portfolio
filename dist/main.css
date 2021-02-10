@@ -485,6 +485,7 @@ textarea {
 }
 #navBar .navBar__icon:hover {
   transform: translateY(-10%);
+  opacity: 0.75;
 }
 
 #hero {
@@ -615,6 +616,12 @@ textarea {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+}
+#projects .projects__links__icon {
+  transition: opacity 250ms ease;
+}
+#projects .projects__links__icon:hover {
+  opacity: 0.75;
 }
 #projects .projects__links__icon svg {
   transition: transform, padding-left, 250ms ease;

@@ -127,6 +127,7 @@
 
     &:hover {
       transform: translateY(-10%);
+      opacity: 0.75;
     }
   }
 }
@@ -283,6 +284,14 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+
+    &__icon {
+      transition: opacity 250ms ease;
+    }
+
+    &__icon:hover {
+      opacity: 0.75;
+    }
 
     &__icon svg {
       transition: transform, padding-left, 250ms ease;
