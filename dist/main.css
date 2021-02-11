@@ -391,8 +391,6 @@ textarea {
   color: #fbfbf2;
   background-color: #0625b4;
   position: relative;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  background: transparent;
   outline: none;
   transition: all 250ms ease;
 }
@@ -423,7 +421,6 @@ textarea {
   height: 2px;
   width: 0;
   background: #0625b4;
-  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
   transition: all 400ms ease;
 }
 .btn__hero:after {
@@ -499,6 +496,7 @@ textarea {
 }
 #hero .hero__content .hero__title {
   margin-left: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 #about {
@@ -508,6 +506,8 @@ textarea {
 #about .about__text {
   max-width: 700px;
   margin: 0 auto;
+  text-align: left;
+  padding-left: 2rem;
 }
 
 #projects {
@@ -621,7 +621,7 @@ textarea {
   transition: opacity 250ms ease;
 }
 #projects .projects__links__icon:hover {
-  opacity: 0.75;
+  opacity: 0.8;
 }
 #projects .projects__links__icon svg {
   transition: transform, padding-left, 250ms ease;
@@ -699,7 +699,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   margin: 2rem auto;
-  background-color: #fbfbf2;
+  background-color: #000;
   width: 75%;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -718,19 +718,33 @@ textarea {
   padding: 0.5rem 1rem;
   background: transparent;
   border: none;
-  border-bottom: 2px solid #000;
-  color: #000;
+  border-bottom: 2px solid #fbfbf2;
+  color: #fbfbf2;
 }
 #contact .contact__form .message-input {
   height: 100px;
   font-family: "Poppins", helvetica, sans-serif;
 }
+#contact .contact__form > button:hover {
+  background: #fff;
+}
+#contact .contact__form > button svg {
+  transition: transform, padding-left, 250ms ease;
+}
+#contact .contact__form > button:hover svg {
+  transform: scale(1.5) translateX(25%) translateY(-20%);
+  padding-left: 0.1rem;
+}
 #contact button[type=submit] {
   width: 25%;
-  background-color: #000;
-  color: #fbfbf2;
+  background-color: #fbfbf2;
+  color: #000;
   font-family: "Poppins", helvetica, sans-serif;
   padding: 0.8rem 2rem;
+  transition: opacity, 250ms ease;
+}
+#contact button[type=submit]:hover {
+  opacity: 0.75;
 }
 
 #footer {
