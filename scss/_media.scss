@@ -1,0 +1,102 @@
+@use "base.scss" as *;
+
+@media (hover: hover) {
+  button:hover {
+    background-color: $accent-color;
+  }
+  button[type="submit"]:hover {
+    background-color: $secondary-color;
+  }
+}
+
+// Tablets & Smaller
+// @media (max-width: 768px) {
+//   #header-home {
+//     height: 30rem;
+
+//     .header-content {
+//       padding-top: 5rem;
+//     }
+//   }
+// }
+
+// Phones
+@media (max-width: 500px) {
+  #navBar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+
+    .navBar__social {
+      display: none;
+    }
+
+    .navBar__logo {
+      margin-right: 1.5rem;
+    }
+
+    & > ul {
+      margin: 0;
+    }
+  }
+
+  #hero {
+    .hero__content {
+      padding-top: 6rem;
+
+      .hero__title {
+        margin: 0 auto 0.5rem auto;
+        padding: 0 1rem;
+      }
+    }
+  }
+
+  #about {
+    margin-bottom: 10rem;
+
+    .about__text {
+      padding-left: 1.5rem;
+    }
+  }
+
+  #projects {
+    .projects__title {
+      margin-bottom: 4rem;
+    }
+  }
+
+  #contact {
+    margin-bottom: 2rem;
+
+    .container {
+      padding: 0;
+    }
+
+    .contact__form {
+      margin: 0;
+      width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+      opacity: 1;
+      background-color: $primary-color;
+
+      .text-input {
+        color: $secondary-color;
+        border-bottom: 2px solid $secondary-color;
+      }
+    }
+    button[type="submit"] {
+      width: 50%;
+      background-color: $secondary-color;
+      color: $primary-color;
+      padding: 0.8rem 2rem;
+    }
+
+    #footer {
+      .footer__content {
+        padding: 0 2rem;
+      }
+    }
+  }
+}

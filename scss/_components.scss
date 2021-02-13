@@ -81,11 +81,6 @@
   top: 0;
   z-index: 3;
 
-  .navBar__logo {
-    width: 90px;
-    height: 90px;
-  }
-
   ul {
     display: flex;
     margin-left: 1.5rem;
@@ -134,7 +129,7 @@
   color: $secondary-color;
 
   .hero__content {
-    padding-top: 10%;
+    padding-top: 12rem;
     max-width: 800px;
     margin: 0 auto;
 
