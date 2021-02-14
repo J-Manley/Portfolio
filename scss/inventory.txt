@@ -21,7 +21,7 @@
 #083D77 - Indigo Dye
 #004777 - Indigo Blue
 #3581B8 - Steel Blue
-#072ac8 - Persian Blue
+#072AC8 - Persian Blue
 #819B8F - Green
 
 

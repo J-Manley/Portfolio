@@ -117,7 +117,18 @@
 
     &:hover {
       transform: translateY(-10%);
-      opacity: 0.75;
+
+      .fa-github {
+        color: #7d8491;
+      }
+
+      .fa-linkedin {
+        color: #0072b1;
+      }
+
+      .fa-twitter {
+        color: #1da1f2;
+      }
     }
   }
 }
@@ -160,49 +171,42 @@
   padding-top: 100px;
 
   .projects__cards {
+    margin: 0 auto 10rem auto;
+    background: red;
     position: relative;
     height: 430px;
-    max-width: 1125px;
-    width: 100%;
-    margin: 0 auto 10rem auto;
-    // background-color: $secondary-color;
-    color: $primary-color;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 525px;
+  }
 
-    &:hover > div:first-child {
-      transform: translateX(-54%);
-    }
-    &:hover .projects__card__right {
-      opacity: 1;
-      transform: translateX(50%);
-    }
-    &:hover .projects__card__left::before {
-      background-color: rgba(255, 255, 255, 0);
-    }
-    &:hover .projects__card--1::after {
-      opacity: 0;
-    }
-    &:hover .projects__card--2::after {
-      opacity: 0;
-    }
-    &:hover .projects__card--3::after {
-      opacity: 0;
-    }
-    &:hover .projects__card--4::after {
-      opacity: 0;
-    }
+  &:hover .projects__card__left {
+    transform: translateX(-54%);
+  }
+  &:hover .projects__card__right {
+    transform: translateX(50%);
+  }
+  &:hover .projects__card__left::before {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  &:hover .projects__card--1::after {
+    opacity: 0;
+  }
+  &:hover .projects__card--2::after {
+    opacity: 0;
+  }
+  &:hover .projects__card--3::after {
+    opacity: 0;
+  }
+  &:hover .projects__card--4::after {
+    opacity: 0;
   }
 
   .projects__card__left {
     position: absolute;
     height: 430px;
     max-width: 525px;
-    width: 100%;
     z-index: 2;
     transition: transform, 750ms ease;
+    // display: none;
 
     > img {
       border-radius: 5px;
@@ -223,17 +227,16 @@
 
   .projects__card__right {
     position: absolute;
+    top: 0;
+    left: 0;
     height: 430px;
     max-width: 525px;
     width: 100%;
     background-color: $secondary-color;
     color: $primary-color;
-    opacity: 0;
     transition: transform, opacity, 750ms ease;
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: none;
   }
 
   .projects__text {

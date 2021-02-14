@@ -1,14 +1,5 @@
 @use "base.scss" as *;
 
-@media (hover: hover) {
-  button:hover {
-    background-color: $accent-color;
-  }
-  button[type="submit"]:hover {
-    background-color: $secondary-color;
-  }
-}
-
 // Tablets & Smaller
 // @media (max-width: 768px) {
 //   #header-home {
@@ -21,6 +12,7 @@
 // }
 
 // Phones
+
 @media (max-width: 500px) {
   #navBar {
     flex-direction: column;
@@ -36,8 +28,12 @@
       margin-right: 1.5rem;
     }
 
-    & > ul {
+    > ul {
       margin: 0;
+
+      > li::after {
+        display: none;
+      }
     }
   }
 
@@ -48,6 +44,17 @@
       .hero__title {
         margin: 0 auto 0.5rem auto;
         padding: 0 1rem;
+      }
+
+      .btn__hero::before,
+      .btn__hero::after {
+        display: none;
+      }
+
+      .btn {
+        background: $accent-color;
+        color: $primary-color;
+        font-size: 1.1rem;
       }
     }
   }
@@ -61,9 +68,6 @@
   }
 
   #projects {
-    .projects__title {
-      margin-bottom: 4rem;
-    }
   }
 
   #contact {
@@ -92,11 +96,11 @@
       color: $primary-color;
       padding: 0.8rem 2rem;
     }
+  }
 
-    #footer {
-      .footer__content {
-        padding: 0 2rem;
-      }
+  #footer {
+    .footer__content {
+      padding: 0 2rem;
     }
   }
 }
