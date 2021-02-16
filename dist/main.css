@@ -524,27 +524,6 @@ textarea {
   height: 430px;
   max-width: 525px;
 }
-#projects:hover .projects__card__left {
-  transform: translateX(-54%);
-}
-#projects:hover .projects__card__right {
-  transform: translateX(50%);
-}
-#projects:hover .projects__card__left::before {
-  background-color: rgba(255, 255, 255, 0);
-}
-#projects:hover .projects__card--1::after {
-  opacity: 0;
-}
-#projects:hover .projects__card--2::after {
-  opacity: 0;
-}
-#projects:hover .projects__card--3::after {
-  opacity: 0;
-}
-#projects:hover .projects__card--4::after {
-  opacity: 0;
-}
 #projects .projects__card__left {
   position: absolute;
   height: 430px;
@@ -686,8 +665,7 @@ textarea {
   transition: opacity 450ms ease;
 }
 #contact {
-  padding: 10rem 0 6rem 0;
-  margin-bottom: 10rem;
+  padding-top: 10rem 0 6rem 0;
 }
 #contact .contact__form {
   display: flex;
