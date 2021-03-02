@@ -12,6 +12,10 @@ $website-width: 1280px;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: $primary-color;
   font-family: $font-family;

@@ -154,8 +154,8 @@
 // About Section
 
 #about {
-  margin-bottom: 20rem;
-  padding-top: 100px;
+  margin-bottom: 21rem;
+  scroll-margin-top: 345px;
 
   .about__text {
     max-width: 700px;
@@ -168,7 +168,7 @@
 // Project Section
 
 #projects {
-  padding-top: 100px;
+  scroll-margin-top: 100px;
 
   .projects__cards {
     margin: 0 auto 10rem auto;
