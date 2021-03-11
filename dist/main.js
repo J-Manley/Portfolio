@@ -34,12 +34,12 @@
 
 // window.addEventListener("scroll", debounce(checkSlide));
 
-const projects = document.querySelectorAll(".fade-in");
+const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll(".slide-in");
 
 const appearOptions = {
-  threshold: 0.95,
-  // rootMargin: "0px 0px -100px 0px",
+  threshold: 0,
+  rootMargin: "0px 0px -350px 0px",
 };
 
 const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
@@ -53,8 +53,8 @@ const appearOnScroll = new IntersectionObserver(function (entries, appearOnScrol
   });
 }, appearOptions);
 
-projects.forEach((project) => {
-  appearOnScroll.observe(project);
+faders.forEach((fader) => {
+  appearOnScroll.observe(fader);
 });
 
 sliders.forEach((slider) => {

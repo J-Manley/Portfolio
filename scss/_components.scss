@@ -79,22 +79,33 @@
 
 .from-left {
   transform: translateX(-50%);
-  opacity: 0;
 }
 
 .from-right {
   transform: translateX(50%);
-  opacity: 0;
 }
 
 .from-left,
 .from-right {
-  transition: transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  opacity: 0;
 }
 
 .from-left.appear,
 .from-right.appear {
   transform: translateX(0);
+  opacity: 1;
+}
+
+.from-bottom {
+  transform: translateY(50%);
+  transition: opacity 400ms ease-in;
+  opacity: 0;
+
+  &.appear {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 // Navbar
