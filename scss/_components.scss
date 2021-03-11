@@ -176,6 +176,11 @@
     position: relative;
     height: 430px;
     max-width: 525px;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .projects__cards .active {
+    opacity: 1;
   }
 
   // &:hover .projects__card__left {
