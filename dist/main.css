@@ -442,7 +442,7 @@ textarea {
   opacity: 0;
   transition: opacity 250ms ease-in;
 }
-.fade-in .appear {
+.fade-in.appear {
   opacity: 1;
 }
 
@@ -534,7 +534,7 @@ textarea {
   background: red;
   position: relative;
   height: 430px;
-  max-width: 525px;
+  max-width: 825px;
 }
 #projects .projects__card__left {
   position: absolute;

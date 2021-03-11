@@ -71,7 +71,8 @@
 .fade-in {
   opacity: 0;
   transition: opacity 250ms ease-in;
-  .appear {
+
+  &.appear {
     opacity: 1;
   }
 }
@@ -183,7 +184,7 @@
     background: red;
     position: relative;
     height: 430px;
-    max-width: 525px;
+    max-width: 825px;
   }
 
   // &:hover .projects__card__left {
