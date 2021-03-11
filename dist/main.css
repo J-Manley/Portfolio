@@ -438,6 +438,14 @@ textarea {
   transition: all 750ms ease;
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+.fade-in .appear {
+  opacity: 1;
+}
+
 #navBar {
   display: flex;
   justify-content: space-between;
@@ -478,7 +486,7 @@ textarea {
   display: inline-block;
   margin-right: 0.5rem;
   color: #fbfbf2;
-  transition: transform, opacity, 250ms ease;
+  transition: transform 250ms ease;
 }
 #navBar .navBar__icon:hover {
   transform: translateY(-10%);
@@ -527,11 +535,6 @@ textarea {
   position: relative;
   height: 430px;
   max-width: 525px;
-  opacity: 0;
-  transition: all 0.5s;
-}
-#projects .projects__cards .active {
-  opacity: 1;
 }
 #projects .projects__card__left {
   position: absolute;

@@ -68,6 +68,14 @@
   }
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+  .appear {
+    opacity: 1;
+  }
+}
+
 // Navbar
 
 #navBar {
@@ -113,7 +121,7 @@
     display: inline-block;
     margin-right: 0.5rem;
     color: $primary-color;
-    transition: transform, opacity, 250ms ease;
+    transition: transform 250ms ease;
 
     &:hover {
       transform: translateY(-10%);
@@ -176,11 +184,6 @@
     position: relative;
     height: 430px;
     max-width: 525px;
-    opacity: 0;
-    transition: all 0.5s;
-  }
-  .projects__cards .active {
-    opacity: 1;
   }
 
   // &:hover .projects__card__left {
@@ -211,7 +214,6 @@
     max-width: 525px;
     z-index: 2;
     transition: transform, 750ms ease;
-    // display: none;
 
     > img {
       border-radius: 5px;
@@ -241,7 +243,6 @@
     color: $primary-color;
     transition: transform, opacity, 750ms ease;
     border-radius: 5px;
-    // display: none;
   }
 
   .projects__text {
