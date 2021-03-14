@@ -215,210 +215,220 @@
     position: relative;
     height: 430px;
     max-width: 525px;
-  }
+    transition: all 400ms ease;
 
-  // &:hover .projects__card__left {
-  //   transform: translateX(-54%);
-  // }
-  // &:hover .projects__card__right {
-  //   transform: translateX(50%);
-  // }
-  // &:hover .projects__card__left::before {
-  //   background-color: rgba(255, 255, 255, 0);
-  // }
-  // &:hover .projects__card--1::after {
-  //   opacity: 0;
-  // }
-  // &:hover .projects__card--2::after {
-  //   opacity: 0;
-  // }
-  // &:hover .projects__card--3::after {
-  //   opacity: 0;
-  // }
-  // &:hover .projects__card--4::after {
-  //   opacity: 0;
-  // }
-
-  .projects__card__left {
-    position: absolute;
-    height: 430px;
-    max-width: 525px;
-    z-index: 2;
-    transition: transform, 750ms ease;
-
-    > img {
-      border-radius: 5px;
-    }
-
-    &::before {
-      content: "";
-      background-color: rgba(0, 0, 0, 0.75);
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      border-radius: 5px;
-      transition: background-color 750ms ease;
+    &--expand {
+      max-width: 1100px;
+      background-color: red;
     }
   }
+}
 
-  .projects__card__right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 430px;
-    max-width: 525px;
-    width: 100%;
-    background-color: $secondary-color;
-    color: $primary-color;
-    transition: transform, opacity, 750ms ease;
+// &:hover .projects__card__left {
+//   transform: translateX(-54%);
+// }
+// &:hover .projects__card__right {
+//   transform: translateX(50%);
+// }
+// &:hover .projects__card__left::before {
+//   background-color: rgba(255, 255, 255, 0);
+// }
+// &:hover .projects__card--1::after {
+//   opacity: 0;
+// }
+// &:hover .projects__card--2::after {
+//   opacity: 0;
+// }
+// &:hover .projects__card--3::after {
+//   opacity: 0;
+// }
+// &:hover .projects__card--4::after {
+//   opacity: 0;
+// }
+
+.projects__card__left {
+  position: absolute;
+  height: 430px;
+  max-width: 525px;
+  z-index: 2;
+  transition: transform, 750ms ease;
+
+  > img {
     border-radius: 5px;
   }
 
-  .projects__text {
-    max-width: 450px;
+  &::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    transition: background-color 750ms ease;
+  }
+}
+
+.projects__card__right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 430px;
+  max-width: 525px;
+  width: 100%;
+  background-color: $secondary-color;
+  color: $primary-color;
+  transition: transform 400ms ease;
+  border-radius: 5px;
+
+  &--slide {
+    transform: translateX(102%);
+  }
+}
+
+.projects__text {
+  max-width: 450px;
+}
+
+.projects__tech {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1.5rem;
+}
+
+.projects__logo {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+
+  > img {
+    width: auto;
+  }
+}
+
+.projects__design > p {
+  margin-bottom: 0.5rem;
+}
+
+.projects__built > p {
+  margin-bottom: 0.5rem;
+}
+
+.projects__built {
+  flex: 0 1 40%;
+}
+
+.projects__built div:nth-of-type(3) {
+  margin-right: 0.85rem;
+}
+
+.projects__links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+  &__icon {
+    transition: opacity 250ms ease;
   }
 
-  .projects__tech {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 1.5rem;
+  &__icon:hover {
+    opacity: 0.8;
   }
 
-  .projects__logo {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-
-    > img {
-      width: auto;
-    }
+  &__icon svg {
+    transition: transform, padding-left, 250ms ease;
   }
 
-  .projects__design > p {
-    margin-bottom: 0.5rem;
+  &__icon:hover svg {
+    transform: scale(1.5);
+    padding-left: 0.1rem;
   }
+}
 
-  .projects__built > p {
-    margin-bottom: 0.5rem;
+.projects__card--1 {
+  &::after {
+    content: "Project 1";
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 150px;
+    height: 40px;
+    transform: translate(-50%, -55%);
+    border-radius: 5px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+    transition: opacity 450ms ease;
   }
+}
 
-  .projects__built {
-    flex: 0 1 40%;
+.projects__card--1a {
+}
+
+.projects__card--2 {
+  &::after {
+    content: "Project 2";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 150px;
+    height: 40px;
+    transform: translate(-50%, -60%);
+    border-radius: 5px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+    transition: opacity 450ms ease;
   }
+}
 
-  .projects__built div:nth-of-type(3) {
-    margin-right: 0.85rem;
+.projects__card--2a {
+}
+
+.projects__card--3 {
+  &::after {
+    content: "Project 3";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 150px;
+    height: 40px;
+    transform: translate(-50%, -60%);
+    border-radius: 5px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+    transition: opacity 450ms ease;
   }
+}
 
-  .projects__links {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+.projects__card--3a {
+}
 
-    &__icon {
-      transition: opacity 250ms ease;
-    }
-
-    &__icon:hover {
-      opacity: 0.8;
-    }
-
-    &__icon svg {
-      transition: transform, padding-left, 250ms ease;
-    }
-
-    &__icon:hover svg {
-      transform: scale(1.5);
-      padding-left: 0.1rem;
-    }
+.projects__card--4 {
+  &::after {
+    content: "Project 4";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 150px;
+    height: 40px;
+    transform: translate(-50%, -60%);
+    border-radius: 5px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+    transition: opacity 450ms ease;
   }
+}
 
-  .projects__card--1 {
-    &::after {
-      content: "Project 1";
-      position: absolute;
-      top: 45%;
-      left: 50%;
-      width: 150px;
-      height: 40px;
-      transform: translate(-50%, -55%);
-      border-radius: 5px;
-      font-size: 1.875rem;
-      line-height: 2.25rem;
-      border: 2px solid $primary-color;
-      color: $primary-color;
-      transition: opacity 450ms ease;
-    }
-  }
-
-  .projects__card--1a {
-  }
-
-  .projects__card--2 {
-    &::after {
-      content: "Project 2";
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      width: 150px;
-      height: 40px;
-      transform: translate(-50%, -60%);
-      border-radius: 5px;
-      font-size: 1.875rem;
-      line-height: 2.25rem;
-      border: 2px solid $primary-color;
-      color: $primary-color;
-      transition: opacity 450ms ease;
-    }
-  }
-
-  .projects__card--2a {
-  }
-
-  .projects__card--3 {
-    &::after {
-      content: "Project 3";
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      width: 150px;
-      height: 40px;
-      transform: translate(-50%, -60%);
-      border-radius: 5px;
-      font-size: 1.875rem;
-      line-height: 2.25rem;
-      border: 2px solid $primary-color;
-      color: $primary-color;
-      transition: opacity 450ms ease;
-    }
-  }
-
-  .projects__card--3a {
-  }
-
-  .projects__card--4 {
-    &::after {
-      content: "Project 4";
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      width: 150px;
-      height: 40px;
-      transform: translate(-50%, -60%);
-      border-radius: 5px;
-      font-size: 1.875rem;
-      line-height: 2.25rem;
-      border: 2px solid $primary-color;
-      color: $primary-color;
-      transition: opacity 450ms ease;
-    }
-  }
-
-  .projects__card--4a {
-  }
+.projects__card--4a {
 }
 
 #contact {

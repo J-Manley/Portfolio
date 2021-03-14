@@ -564,18 +564,24 @@ textarea {
   position: relative;
   height: 430px;
   max-width: 525px;
+  transition: all 400ms ease;
 }
-#projects .projects__card__left {
+#projects .projects__cards--expand {
+  max-width: 1100px;
+  background-color: red;
+}
+
+.projects__card__left {
   position: absolute;
   height: 430px;
   max-width: 525px;
   z-index: 2;
   transition: transform, 750ms ease;
 }
-#projects .projects__card__left > img {
+.projects__card__left > img {
   border-radius: 5px;
 }
-#projects .projects__card__left::before {
+.projects__card__left::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.75);
   position: absolute;
@@ -586,7 +592,8 @@ textarea {
   border-radius: 5px;
   transition: background-color 750ms ease;
 }
-#projects .projects__card__right {
+
+.projects__card__right {
   position: absolute;
   top: 0;
   left: 0;
@@ -595,57 +602,69 @@ textarea {
   width: 100%;
   background-color: #000;
   color: #fbfbf2;
-  transition: transform, opacity, 750ms ease;
+  transition: transform 400ms ease;
   border-radius: 5px;
 }
-#projects .projects__text {
+.projects__card__right--slide {
+  transform: translateX(102%);
+}
+
+.projects__text {
   max-width: 450px;
 }
-#projects .projects__tech {
+
+.projects__tech {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 1.5rem;
 }
-#projects .projects__logo {
+
+.projects__logo {
   display: inline-block;
   width: 35px;
   height: 35px;
 }
-#projects .projects__logo > img {
+.projects__logo > img {
   width: auto;
 }
-#projects .projects__design > p {
+
+.projects__design > p {
   margin-bottom: 0.5rem;
 }
-#projects .projects__built > p {
+
+.projects__built > p {
   margin-bottom: 0.5rem;
 }
-#projects .projects__built {
+
+.projects__built {
   flex: 0 1 40%;
 }
-#projects .projects__built div:nth-of-type(3) {
+
+.projects__built div:nth-of-type(3) {
   margin-right: 0.85rem;
 }
-#projects .projects__links {
+
+.projects__links {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
-#projects .projects__links__icon {
+.projects__links__icon {
   transition: opacity 250ms ease;
 }
-#projects .projects__links__icon:hover {
+.projects__links__icon:hover {
   opacity: 0.8;
 }
-#projects .projects__links__icon svg {
+.projects__links__icon svg {
   transition: transform, padding-left, 250ms ease;
 }
-#projects .projects__links__icon:hover svg {
+.projects__links__icon:hover svg {
   transform: scale(1.5);
   padding-left: 0.1rem;
 }
-#projects .projects__card--1::after {
+
+.projects__card--1::after {
   content: "Project 1";
   position: absolute;
   top: 45%;
@@ -660,7 +679,8 @@ textarea {
   color: #fbfbf2;
   transition: opacity 450ms ease;
 }
-#projects .projects__card--2::after {
+
+.projects__card--2::after {
   content: "Project 2";
   position: absolute;
   top: 40%;
@@ -675,7 +695,8 @@ textarea {
   color: #fbfbf2;
   transition: opacity 450ms ease;
 }
-#projects .projects__card--3::after {
+
+.projects__card--3::after {
   content: "Project 3";
   position: absolute;
   top: 40%;
@@ -690,7 +711,8 @@ textarea {
   color: #fbfbf2;
   transition: opacity 450ms ease;
 }
-#projects .projects__card--4::after {
+
+.projects__card--4::after {
   content: "Project 4";
   position: absolute;
   top: 40%;
@@ -705,6 +727,7 @@ textarea {
   color: #fbfbf2;
   transition: opacity 450ms ease;
 }
+
 #contact {
   padding-top: 10rem 0 6rem 0;
   scroll-margin-top: 100px;

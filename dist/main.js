@@ -1,39 +1,3 @@
-// function debounce(callback, wait) {
-//   let timeout;
-//   return (...args) => {
-//     const context = this;
-//     clearTimeout(timeout);
-//     timeout = setTimeout(() => callback.apply(context, args), wait);
-//   };
-// }
-
-// const slideCardUp = document.querySelectorAll(".slide-in");
-
-// // Check all of the images and slide them in or out as needed
-// function checkSlide(e) {
-//   // What part of the content is visible in the window?
-//   const windowTop = window.scrollY;
-//   const windowBottom = window.scrollY + window.innerHeight;
-
-//   slideCardUp.forEach((card) => {
-//     const cardTop = card.offsetTop;
-//     const cardBottom = card.offsetTop + card.height;
-//     const cardMiddle = (cardTop + cardBottom) / 2;
-
-//     // The image should slide in if its middle is visible in the window
-//     if (cardMiddle >= windowTop && cardMiddle <= windowBottom) {
-//       card.classList.add("active");
-//     }
-
-//     // The image should slide out if entirely above or below visible window
-//     if (cardBottom < windowTop || cardTop > windowBottom) {
-//       card.classList.remove("active");
-//     }
-//   });
-// }
-
-// window.addEventListener("scroll", debounce(checkSlide));
-
 const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll(".slide-in");
 
@@ -59,4 +23,18 @@ faders.forEach((fader) => {
 
 sliders.forEach((slider) => {
   appearOnScroll.observe(slider);
+});
+
+const cards = document.querySelector(".projects__cards");
+const cardLeft = document.querySelector(".projects__card__left");
+const cardRight = document.querySelector(".projects__card__right");
+
+cards.addEventListener("mouseenter", function () {
+  cards.classList.add("projects__cards--expand");
+  cardRight.classList.add("projects__card__right--slide");
+});
+
+cards.addEventListener("mouseleave", function () {
+  cards.classList.remove("projects__cards--expand");
+  cardRight.classList.remove("projects__card__right--slide");
 });
