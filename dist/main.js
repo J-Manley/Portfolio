@@ -25,16 +25,20 @@ sliders.forEach((slider) => {
   appearOnScroll.observe(slider);
 });
 
-const cards = document.querySelector(".projects__cards");
+const cards = document.querySelectorAll(".projects__cards");
+const cardsArr = Array.from(cards);
 const cardLeft = document.querySelector(".projects__card__left");
 const cardRight = document.querySelector(".projects__card__right");
 
-cards.addEventListener("mouseenter", function () {
+function cardSlideAdd() {
   cards.classList.add("projects__cards--expand");
   cardRight.classList.add("projects__card__right--slide");
-});
+}
 
-cards.addEventListener("mouseleave", function () {
+function cardSlideRemove() {
   cards.classList.remove("projects__cards--expand");
   cardRight.classList.remove("projects__card__right--slide");
-});
+}
+
+cardsArr.forEach((card) => card.addEventListener("mouseenter", cardSlideAdd));
+cardsArr.forEach((card) => card.addEventListener("mouseleave", cardSlideRemove));
