@@ -25,10 +25,8 @@ sliders.forEach((slider) => {
   appearOnScroll.observe(slider);
 });
 
-const cards = document.querySelectorAll(".projects__cards");
-const cardsArr = Array.from(cards);
-const cardLeft = document.querySelector(".projects__card__left");
-const cardRight = document.querySelector(".projects__card__right");
+const cards = Array.from(document.querySelectorAll("#projects .projects__cards"));
+const cardRight = Array.from(document.querySelectorAll(".projects__card__right"));
 
 function cardSlideAdd() {
   cards.classList.add("projects__cards--expand");
@@ -40,5 +38,5 @@ function cardSlideRemove() {
   cardRight.classList.remove("projects__card__right--slide");
 }
 
-cardsArr.forEach((card) => card.addEventListener("mouseenter", cardSlideAdd));
-cardsArr.forEach((card) => card.addEventListener("mouseleave", cardSlideRemove));
+cards.forEach((card) => card.addEventListener("mouseenter", cardSlideAdd));
+cards.forEach((card) => card.addEventListener("mouseleave", cardSlideRemove));
