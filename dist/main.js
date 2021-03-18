@@ -25,18 +25,19 @@ sliders.forEach((slider) => {
   appearOnScroll.observe(slider);
 });
 
-const cards = Array.from(document.querySelectorAll("#projects .projects__cards"));
+const cards = Array.from(document.querySelectorAll(".projects__cards"));
 const cardRight = Array.from(document.querySelectorAll(".projects__card__right"));
 
-function cardSlideAdd() {
-  cards.classList.add("projects__cards--expand");
-  cardRight.classList.add("projects__card__right--slide");
+for (let i = 0; i < cards.length; i++) {
+  cards[i].addEventListener("mouseenter", function () {
+    cards[i].classList.add("projects__cards--expand");
+    cardRight[i].classList.add("projects__card__right--slide");
+  });
 }
 
-function cardSlideRemove() {
-  cards.classList.remove("projects__cards--expand");
-  cardRight.classList.remove("projects__card__right--slide");
+for (let i = 0; i < cards.length; i++) {
+  cards[i].addEventListener("mouseleave", function () {
+    cards[i].classList.remove("projects__cards--expand");
+    cardRight[i].classList.remove("projects__card__right--slide");
+  });
 }
-
-cards.forEach((card) => card.addEventListener("mouseenter", cardSlideAdd));
-cards.forEach((card) => card.addEventListener("mouseleave", cardSlideRemove));
