@@ -4,7 +4,7 @@
 %btn-shared {
   display: inline-block;
   padding: 0.8rem 2rem;
-  border-radius: 5px;
+  border-radius: 25px;
   transition: all 0.5s;
   border: none;
   cursor: pointer;
@@ -29,41 +29,9 @@
 
   &__hero {
     @extend %btn-shared;
-    width: 150px;
-    height: 50px;
-    line-height: 48px;
-    padding: 0;
-    border: none;
-    background: rgb(6, 37, 180);
 
     &:hover {
-      color: $accent-color;
       font-size: 1.1rem;
-      background: transparent;
-      box-shadow: none;
-    }
-
-    &:before,
-    &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 2px;
-      width: 0;
-      background: $accent-color;
-      transition: all 400ms ease;
-    }
-    &:after {
-      right: inherit;
-      top: inherit;
-      left: 0;
-      bottom: 0;
-    }
-    &:hover:before,
-    &:hover:after {
-      width: 100%;
-      transition: all 750ms ease;
     }
   }
 }
@@ -219,16 +187,20 @@
 
     &--expand {
       max-width: 1100px;
+
+      .projects__card__left::before {
+        opacity: 0;
+      }
+      .projects__card--1::after,
+      .projects__card--2::after,
+      .projects__card--3::after,
+      .projects__card--4::after {
+        opacity: 0;
+      }
     }
   }
 }
 
-// &:hover .projects__card__left {
-//   transform: translateX(-54%);
-// }
-// &:hover .projects__card__right {
-//   transform: translateX(50%);
-// }
 // &:hover .projects__card__left::before {
 //   background-color: rgba(255, 255, 255, 0);
 // }
@@ -250,7 +222,7 @@
   height: 430px;
   max-width: 525px;
   z-index: 2;
-  transition: transform, 750ms ease;
+  transition: transform 750ms ease;
 
   > img {
     border-radius: 5px;
@@ -265,7 +237,7 @@
     bottom: 0;
     left: 0;
     border-radius: 5px;
-    transition: background-color 750ms ease;
+    transition: opacity 400ms ease;
   }
 }
 
@@ -362,7 +334,7 @@
     line-height: 2.25rem;
     border: 2px solid $primary-color;
     color: $primary-color;
-    transition: opacity 450ms ease;
+    transition: opacity 400ms ease;
   }
 }
 

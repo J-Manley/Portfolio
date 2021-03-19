@@ -27,6 +27,14 @@ sliders.forEach((slider) => {
 
 const cards = Array.from(document.querySelectorAll(".projects__cards"));
 const cardRight = Array.from(document.querySelectorAll(".projects__card__right"));
+const cardOverlay = Array.from(
+  document.querySelectorAll(".projects__card__left::before")
+);
+const cardTitles = Array.from(
+  document.querySelectorAll(
+    ".projects__card--1::after,projects__card--2::after,projects__card--3::after,projects__card--4::after"
+  )
+);
 
 for (let i = 0; i < cards.length; i++) {
   cards[i].addEventListener("mouseenter", function () {
