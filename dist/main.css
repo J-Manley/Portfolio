@@ -389,24 +389,37 @@ textarea {
   transition: all 0.5s;
   border: none;
   cursor: pointer;
+  z-index: 2;
 }
 
 .btn__main {
   color: #fbfbf2;
   background-color: #336699;
   position: relative;
-  outline: none;
-  transition: all 250ms ease;
+  overflow: hidden;
+}
+.btn__main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 400ms ease;
+}
+.btn__main:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 .btn__secondary {
   color: #000;
   background-color: #fbfbf2;
   padding: 0.7rem 1rem;
 }
-.btn__hero:hover {
-  font-size: 1.1rem;
-}
-
 .fade-in {
   opacity: 0;
   transition: opacity 250ms ease-in;
