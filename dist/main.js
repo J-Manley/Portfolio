@@ -35,8 +35,6 @@ const cardTitles = Array.from(
     ".projects__card--1::after,projects__card--2::after,projects__card--3::after,projects__card--4::after"
   )
 );
-const BtnMain = document.querySelector(".btn__main");
-const BtnMainHov = document.querySelector(".btn__main:hover");
 
 for (let i = 0; i < cards.length; i++) {
   cards[i].addEventListener("mouseenter", function () {
@@ -51,7 +49,3 @@ for (let i = 0; i < cards.length; i++) {
     cardRight[i].classList.remove("projects__card__right--slide");
   });
 }
-
-// function addBtnIcon(){
-//   if()
-// }
