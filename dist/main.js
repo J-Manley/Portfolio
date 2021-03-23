@@ -1,5 +1,4 @@
 const faders = document.querySelectorAll(".fade-in");
-const sliders = document.querySelectorAll(".slide-in");
 
 const appearOptions = {
   threshold: 0,
@@ -21,12 +20,9 @@ faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
 
-sliders.forEach((slider) => {
-  appearOnScroll.observe(slider);
-});
-
 const cards = Array.from(document.querySelectorAll(".projects__cards"));
 const cardRight = Array.from(document.querySelectorAll(".projects__card__right"));
+const cardLeft = Array.from(document.querySelectorAll(".projects__card__left"));
 const cardOverlay = Array.from(
   document.querySelectorAll(".projects__card__left::before")
 );
@@ -40,6 +36,8 @@ for (let i = 0; i < cards.length; i++) {
   cards[i].addEventListener("mouseenter", function () {
     cards[i].classList.add("projects__cards--expand");
     cardRight[i].classList.add("projects__card__right--slide");
+    cardLeft[i].style.display = "box-shadow: rgba(255, 0, 0, 0.9) 0px 5px 15px;";
+    cardRight[i].style.display = "box-shadow: rgba(255, 0, 0, 0.9) 0px 5px 15px;";
   });
 }
 
@@ -47,5 +45,14 @@ for (let i = 0; i < cards.length; i++) {
   cards[i].addEventListener("mouseleave", function () {
     cards[i].classList.remove("projects__cards--expand");
     cardRight[i].classList.remove("projects__card__right--slide");
+    cardLeft[i].style.display = "none";
+    cardRight[i].style.display = "none";
   });
 }
+
+// for (let i = 0; i < cards.length; i++) {
+//   if (cards[i].classList.contains("projects__cards--expand")) {
+//     cardLeft.style.display = "box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;";
+//     cardRight.style.display = "box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;";
+//   }
+// }
