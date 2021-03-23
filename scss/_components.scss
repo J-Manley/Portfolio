@@ -262,7 +262,7 @@
   background-color: $secondary-color;
   color: $primary-color;
   border-radius: 5px;
-  transition: transform 400ms ease;
+  transition: all 400ms ease;
 
   &--slide {
     transform: translateX(102%);
