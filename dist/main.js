@@ -45,3 +45,18 @@ for (let i = 0; i < cards.length; i++) {
     cardRight[i].classList.remove("projects__card__right--slide");
   });
 }
+
+const open = document.getElementById("open");
+const close = document.getElementById("close");
+const modal = document.getElementById("modal");
+
+// Show Modal
+open.addEventListener("click", () => modal.classList.add("show-modal"));
+
+// Hide Modal
+close.addEventListener("click", () => modal.classList.remove("show-modal"));
+
+// Hide modal on outside click
+window.addEventListener("click", (e) =>
+  e.target === modal ? modal.classList.remove("show-modal") : false
+);

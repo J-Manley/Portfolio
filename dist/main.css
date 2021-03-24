@@ -382,6 +382,53 @@ textarea {
   line-height: 1;
 }
 
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  animation-name: modal-open;
+  animation-duration: 1s;
+}
+.modal__inner {
+  background-color: #fbfbf2;
+  border: 2px solid #336699;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  max-width: 100%;
+  padding: 2rem;
+}
+.modal__btn {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem 0.25rem 0.25rem;
+}
+.modal.show-modal {
+  display: block;
+}
+
+@keyframes modal-open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .btn__secondary, .btn__main {
   display: inline-block;
   padding: 0.8rem 2rem;
