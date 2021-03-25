@@ -49,6 +49,11 @@ for (let i = 0; i < cards.length; i++) {
 const open = document.getElementById("open");
 const close = document.getElementById("close");
 const modal = document.getElementById("modal");
+const body = document.getElementById("home");
+
+const closeModal = function () {
+  modal.classList.remove("show-modal");
+};
 
 // Show Modal
 open.addEventListener("click", () => modal.classList.add("show-modal"));
@@ -60,3 +65,13 @@ close.addEventListener("click", () => modal.classList.remove("show-modal"));
 window.addEventListener("click", (e) =>
   e.target === modal ? modal.classList.remove("show-modal") : false
 );
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && modal.classList.contains("show-modal")) {
+    closeModal();
+  }
+});
+
+if (body.classList.contains("show-modal")) {
+  body.style.overflowY = "none";
+}
