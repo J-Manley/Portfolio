@@ -868,9 +868,6 @@ textarea {
   #navBar .navBar__social {
     display: none;
   }
-  #navBar .navBar__logo {
-    margin-right: 1.5rem;
-  }
   #navBar > ul {
     margin: 0;
   }
