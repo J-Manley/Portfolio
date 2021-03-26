@@ -33,14 +33,14 @@ const cardTitles = Array.from(
 );
 
 for (let i = 0; i < cards.length; i++) {
-  cards[i].addEventListener("mouseenter", function () {
+  cards[i].addEventListener("mouseenter", () => {
     cards[i].classList.add("projects__cards--expand");
     cardRight[i].classList.add("projects__card__right--slide");
   });
 }
 
 for (let i = 0; i < cards.length; i++) {
-  cards[i].addEventListener("mouseleave", function () {
+  cards[i].addEventListener("mouseleave", () => {
     cards[i].classList.remove("projects__cards--expand");
     cardRight[i].classList.remove("projects__card__right--slide");
   });
@@ -56,10 +56,16 @@ const closeModal = function () {
 };
 
 // Show Modal
-open.addEventListener("click", () => modal.classList.add("show-modal"));
+open.addEventListener("click", () => {
+  modal.classList.add("show-modal");
+  body.style.overflowY = "hidden";
+});
 
 // Hide Modal
-close.addEventListener("click", () => modal.classList.remove("show-modal"));
+close.addEventListener("click", () => {
+  modal.classList.remove("show-modal");
+  body.style.overflowY = "visible";
+});
 
 // Hide modal on outside click
 window.addEventListener("click", (e) =>
@@ -71,7 +77,3 @@ document.addEventListener("keydown", (e) => {
     closeModal();
   }
 });
-
-if (body.classList.contains("show-modal")) {
-  body.style.overflowY = "none";
-}
