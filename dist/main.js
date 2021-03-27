@@ -46,23 +46,23 @@ for (let i = 0; i < cards.length; i++) {
   });
 }
 
-const open = document.getElementById("open");
-const close = document.getElementById("close");
-const modal = document.getElementById("modal");
 const body = document.getElementById("home");
+const modal = document.getElementById("modal");
+const openBtn = Array.from(document.querySelectorAll(".btn--open-modal"));
+const closeBtn = document.getElementById("modal__btn--close");
 
 const closeModal = function () {
   modal.classList.remove("show-modal");
 };
 
-// Show Modal
-open.addEventListener("click", () => {
-  modal.classList.add("show-modal");
-  body.style.overflowY = "hidden";
+openBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    modal.classList.add("show-modal");
+    body.style.overflowY = "hidden";
+  });
 });
 
-// Hide Modal
-close.addEventListener("click", () => {
+closeBtn.addEventListener("click", () => {
   modal.classList.remove("show-modal");
   body.style.overflowY = "visible";
 });
