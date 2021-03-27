@@ -161,6 +161,7 @@
   position: sticky;
   top: 0;
   z-index: 4;
+  padding: 0.5rem 5rem;
 
   ul {
     display: flex;
@@ -314,6 +315,10 @@
   color: $primary-color;
   border-radius: 5px;
   transition: all 400ms ease;
+
+  & > h1 {
+    text-decoration: underline $accent-color;
+  }
 
   &--slide {
     transform: translateX(102%);
