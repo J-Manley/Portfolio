@@ -24,7 +24,12 @@
     transform: translate(-50%, -50%);
     width: 900px;
     max-width: 100%;
-    padding: 2rem;
+    padding: 3rem;
+    padding-top: 2rem;
+  }
+
+  &__content {
+    border: 2px solid $accent-color;
   }
 
   &__btn {
