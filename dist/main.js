@@ -47,25 +47,36 @@ for (let i = 0; i < cards.length; i++) {
 }
 
 const body = document.getElementById("home");
-const modal = document.getElementById("modal");
-const openBtn = Array.from(document.querySelectorAll(".btn--open-modal"));
-const closeBtn = document.getElementById("modal__btn--close");
+const modal = document.querySelectorAll(".modal");
+const openBtn = document.querySelectorAll(".btn--open-modal");
+const closeBtn = document.querySelectorAll(".modal__btn--close");
 
 const closeModal = function () {
   modal.classList.remove("show-modal");
 };
 
-openBtn.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    modal.classList.add("show-modal");
-    body.style.overflowY = "hidden";
-  });
-});
+// for (const btn of openBtn) {
+//   addEventListener("click", function () {
+//     for (const eachModal of modal) {
+//       eachModal.classList.add("show-modal");
+//       body.style.overflowY = "hidden";
+//     }
+//   });
+// }
 
-closeBtn.addEventListener("click", () => {
-  modal.classList.remove("show-modal");
-  body.style.overflowY = "visible";
-});
+// for (let i = 0; i < openBtn.length; i++) {
+//   openBtn[i].addEventListener("click", () => {
+//     modal[i].classList.add("show-modal");
+//     body.style.overflowY = "hidden";
+//   });
+// }
+
+// for (let i = 0; i < closeBtn.length; i++) {
+//   closeBtn[i].addEventListener("click", () => {
+//     modal[i].classList.remove("show-modal");
+//     body.style.overflowY = "visible";
+//   });
+// }
 
 // Hide modal on outside click
 window.addEventListener("click", (e) =>
