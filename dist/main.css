@@ -404,7 +404,7 @@ textarea {
   top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 900px;
+  width: 750px;
   max-width: 100%;
   padding: 3rem;
   padding-top: 2rem;
@@ -592,7 +592,7 @@ textarea {
 
 #about {
   margin-bottom: 21rem;
-  scroll-margin-top: 345px;
+  scroll-margin-top: 250px;
 }
 #about .about__text {
   max-width: 700px;
@@ -797,7 +797,7 @@ textarea {
 
 #contact {
   padding-top: 10rem 0 6rem 0;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 120px;
 }
 #contact .contact__form {
   display: flex;

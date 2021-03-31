@@ -20,17 +20,9 @@ faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
 
-const cards = Array.from(document.querySelectorAll(".projects__cards"));
-const cardRight = Array.from(document.querySelectorAll(".projects__card__right"));
-const cardLeft = Array.from(document.querySelectorAll(".projects__card__left"));
-const cardOverlay = Array.from(
-  document.querySelectorAll(".projects__card__left::before")
-);
-const cardTitles = Array.from(
-  document.querySelectorAll(
-    ".projects__card--1::after,projects__card--2::after,projects__card--3::after,projects__card--4::after"
-  )
-);
+const cards = document.querySelectorAll(".projects__cards");
+const cardRight = document.querySelectorAll(".projects__card__right");
+const cardLeft = document.querySelectorAll(".projects__card__left");
 
 for (let i = 0; i < cards.length; i++) {
   cards[i].addEventListener("mouseenter", () => {
@@ -47,44 +39,35 @@ for (let i = 0; i < cards.length; i++) {
 }
 
 const body = document.getElementById("home");
-const modal = document.querySelectorAll(".modal");
+const modals = document.querySelectorAll(".modal");
 const openBtn = document.querySelectorAll(".btn--open-modal");
 const closeBtn = document.querySelectorAll(".modal__btn--close");
 
 const closeModal = function () {
-  modal.classList.remove("show-modal");
+  modals.classList.remove("show-modal");
 };
 
-// for (const btn of openBtn) {
-//   addEventListener("click", function () {
-//     for (const eachModal of modal) {
-//       eachModal.classList.add("show-modal");
-//       body.style.overflowY = "hidden";
-//     }
-//   });
-// }
+for (let i = 0; i < openBtn.length; i++) {
+  openBtn[i].addEventListener("click", () => {
+    modals[i].classList.add("show-modal");
+    body.style.overflowY = "hidden";
+  });
+}
 
-// for (let i = 0; i < openBtn.length; i++) {
-//   openBtn[i].addEventListener("click", () => {
-//     modal[i].classList.add("show-modal");
-//     body.style.overflowY = "hidden";
-//   });
-// }
-
-// for (let i = 0; i < closeBtn.length; i++) {
-//   closeBtn[i].addEventListener("click", () => {
-//     modal[i].classList.remove("show-modal");
-//     body.style.overflowY = "visible";
-//   });
-// }
+for (let i = 0; i < closeBtn.length; i++) {
+  closeBtn[i].addEventListener("click", () => {
+    modals[i].classList.remove("show-modal");
+    body.style.overflowY = "visible";
+  });
+}
 
 // Hide modal on outside click
 window.addEventListener("click", (e) =>
-  e.target === modal ? modal.classList.remove("show-modal") : false
+  e.target === modals ? modals.classList.remove("show-modal") : false
 );
 
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && modal.classList.contains("show-modal")) {
+  if (e.key === "Escape" && modals.classList.contains("show-modal")) {
     closeModal();
   }
 });
