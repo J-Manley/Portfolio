@@ -43,10 +43,6 @@ const modals = document.querySelectorAll(".modal");
 const openBtn = document.querySelectorAll(".btn--open-modal");
 const closeBtn = document.querySelectorAll(".modal__btn--close");
 
-const closeModal = function () {
-  modals.classList.remove("show-modal");
-};
-
 for (let i = 0; i < openBtn.length; i++) {
   openBtn[i].addEventListener("click", () => {
     modals[i].classList.add("show-modal");
@@ -62,12 +58,16 @@ for (let i = 0; i < closeBtn.length; i++) {
 }
 
 // Hide modal on outside click
-window.addEventListener("click", (e) =>
-  e.target === modals ? modals.classList.remove("show-modal") : false
-);
+for (let i = 0; i < modals.length; i++) {
+  window.addEventListener("click", (e) =>
+    e.target === modals[i] ? modals[i].classList.remove("show-modal") : false
+  );
+}
 
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && modals.classList.contains("show-modal")) {
-    closeModal();
-  }
-});
+for (let i = 0; i < modals.length; i++) {
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modals[i].classList.contains("show-modal")) {
+      modals[i].classList.remove("show-modal");
+    }
+  });
+}
