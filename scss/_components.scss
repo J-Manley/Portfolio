@@ -29,13 +29,17 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     position: absolute;
     overflow: hidden;
-    top: 53%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 750px;
     width: 100%;
     padding: 3rem;
     padding-top: 2rem;
+
+    & .modal__content {
+      border: 1px solid $accent-color;
+    }
   }
 
   &__btn--close {

@@ -410,13 +410,16 @@ textarea {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   position: absolute;
   overflow: hidden;
-  top: 53%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 750px;
   width: 100%;
   padding: 3rem;
   padding-top: 2rem;
+}
+.modal__inner .modal__content {
+  border: 1px solid #336699;
 }
 .modal__btn--close {
   background: transparent;
@@ -872,6 +875,11 @@ textarea {
   overflow: hidden;
 }
 
+@media (hover: hover) {
+  a:hover {
+    color: red;
+  }
+}
 @media (max-width: 500px) {
   #navBar {
     flex-direction: column;
@@ -884,6 +892,7 @@ textarea {
   }
   #navBar > ul {
     margin: 0;
+    padding-left: 1.4rem;
   }
   #navBar > ul > li::after {
     display: none;
@@ -896,21 +905,28 @@ textarea {
     margin: 0 auto 0.5rem auto;
     padding: 0 1rem;
   }
-  #hero .hero__content .btn__hero::before,
-#hero .hero__content .btn__hero::after {
-    display: none;
-  }
-  #hero .hero__content .btn {
-    background: #336699;
-    color: #fbfbf2;
-    font-size: 1.1rem;
+  #hero .hero__content .hero__text {
+    font-size: 1.25rem;
+    padding: 0 1.5rem;
   }
 
   #about {
     margin-bottom: 10rem;
   }
+  #about .about__title {
+    font-size: 3rem;
+  }
   #about .about__text {
-    padding-left: 1.5rem;
+    padding-left: 2.2rem;
+    font-size: 1rem;
+  }
+
+  #projects .projects__title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+  #projects .projects__text {
+    font-size: 1rem;
   }
 
   #contact {

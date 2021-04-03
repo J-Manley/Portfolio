@@ -68,6 +68,7 @@ for (let i = 0; i < modals.length; i++) {
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && modals[i].classList.contains("show-modal")) {
       modals[i].classList.remove("show-modal");
+      body.style.overflowY = "visible";
     }
   });
 }
