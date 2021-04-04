@@ -875,17 +875,21 @@ textarea {
   overflow: hidden;
 }
 
-@media (hover: hover) {
-  a:hover {
-    color: red;
-  }
-}
 @media (max-width: 500px) {
+  .btn {
+    max-width: unset;
+    width: unset;
+  }
+
   #navBar {
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 0;
+  }
+  #navBar .navBar__logo {
+    margin-top: 0.5rem;
+    margin-right: 0.25rem;
   }
   #navBar .navBar__social {
     display: none;
@@ -934,6 +938,10 @@ textarea {
   }
   #contact .container {
     padding: 0;
+  }
+  #contact .contact__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
   }
   #contact .contact__form {
     margin: 0;
