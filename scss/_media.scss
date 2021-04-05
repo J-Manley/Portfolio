@@ -16,7 +16,25 @@
   .btn {
     max-width: unset;
     width: unset;
+
+    &__main {
+      font-size: 1.1rem;
+      margin-left: 0rem;
+
+      &:hover {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+
+      > svg {
+        display: none;
+      }
+    }
   }
+
   #navBar {
     flex-direction: column;
     align-items: center;
@@ -24,8 +42,7 @@
     padding: 0;
 
     & .navBar__logo {
-      margin-top: 0.5rem;
-      margin-right: 0.25rem;
+      margin: 0.5rem 1.5rem 0.25rem 0;
     }
 
     .navBar__social {
@@ -34,7 +51,7 @@
 
     > ul {
       margin: 0;
-      padding-left: 1.4rem;
+      margin-left: 0.5rem;
 
       > li::after {
         display: none;
@@ -44,7 +61,7 @@
 
   #hero {
     .hero__content {
-      padding-top: 6rem;
+      padding-top: 4rem;
 
       .hero__title {
         margin: 0 auto 0.5rem auto;
@@ -59,22 +76,26 @@
   }
 
   #about {
+    scroll-margin-top: 200px;
     margin-bottom: 10rem;
 
     .about__title {
       font-size: 3rem;
+      margin-right: 0.5rem;
     }
 
     .about__text {
-      padding-left: 2.2rem;
       font-size: 1rem;
     }
   }
 
   #projects {
+    scroll-margin-top: 125px;
+
     .projects__title {
       font-size: 3rem;
       margin-bottom: 3rem;
+      padding-right: 1rem;
     }
 
     .projects__text {
@@ -83,6 +104,7 @@
   }
 
   #contact {
+    scroll-margin-top: 150px;
     margin-bottom: 2rem;
 
     .container {

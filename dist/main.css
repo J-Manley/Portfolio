@@ -880,6 +880,19 @@ textarea {
     max-width: unset;
     width: unset;
   }
+  .btn__main {
+    font-size: 1.1rem;
+    margin-left: 0rem;
+  }
+  .btn__main:hover {
+    display: none;
+  }
+  .btn__main::after {
+    display: none;
+  }
+  .btn__main > svg {
+    display: none;
+  }
 
   #navBar {
     flex-direction: column;
@@ -888,22 +901,21 @@ textarea {
     padding: 0;
   }
   #navBar .navBar__logo {
-    margin-top: 0.5rem;
-    margin-right: 0.25rem;
+    margin: 0.5rem 1.5rem 0.25rem 0;
   }
   #navBar .navBar__social {
     display: none;
   }
   #navBar > ul {
     margin: 0;
-    padding-left: 1.4rem;
+    margin-left: 0.5rem;
   }
   #navBar > ul > li::after {
     display: none;
   }
 
   #hero .hero__content {
-    padding-top: 6rem;
+    padding-top: 4rem;
   }
   #hero .hero__content .hero__title {
     margin: 0 auto 0.5rem auto;
@@ -915,25 +927,31 @@ textarea {
   }
 
   #about {
+    scroll-margin-top: 200px;
     margin-bottom: 10rem;
   }
   #about .about__title {
     font-size: 3rem;
+    margin-right: 0.5rem;
   }
   #about .about__text {
-    padding-left: 2.2rem;
     font-size: 1rem;
   }
 
+  #projects {
+    scroll-margin-top: 125px;
+  }
   #projects .projects__title {
     font-size: 3rem;
     margin-bottom: 3rem;
+    padding-right: 1rem;
   }
   #projects .projects__text {
     font-size: 1rem;
   }
 
   #contact {
+    scroll-margin-top: 150px;
     margin-bottom: 2rem;
   }
   #contact .container {

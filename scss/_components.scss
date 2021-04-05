@@ -431,9 +431,6 @@
   }
 }
 
-.projects__card--1a {
-}
-
 .projects__card--2 {
   &::after {
     content: "Project 2";
@@ -450,9 +447,6 @@
     color: $primary-color;
     transition: opacity 450ms ease;
   }
-}
-
-.projects__card--2a {
 }
 
 .projects__card--3 {
@@ -473,9 +467,6 @@
   }
 }
 
-.projects__card--3a {
-}
-
 .projects__card--4 {
   &::after {
     content: "Project 4";
@@ -492,9 +483,6 @@
     color: $primary-color;
     transition: opacity 450ms ease;
   }
-}
-
-.projects__card--4a {
 }
 
 #contact {
