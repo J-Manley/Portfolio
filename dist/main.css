@@ -946,6 +946,7 @@ textarea {
   }
   #about .about__text {
     font-size: 1rem;
+    padding-right: 1rem;
   }
 
   #projects {
@@ -991,7 +992,7 @@ textarea {
   }
   #projects .projects__card__right .projects__tech {
     margin-bottom: 1rem;
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
   #projects .projects__card__right .projects__tech .projects__logo {
     width: 25px;
