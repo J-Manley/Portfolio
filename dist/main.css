@@ -992,7 +992,7 @@ textarea {
   }
   #projects .projects__card__right .projects__tech {
     margin-bottom: 1rem;
-    padding: 0 1rem;
+    padding: 0;
   }
   #projects .projects__card__right .projects__tech .projects__logo {
     width: 25px;
@@ -1006,7 +1006,6 @@ textarea {
     display: none;
   }
   #projects .projects__card__right .projects__links__link {
-    margin: 0 0.5rem;
     width: unset;
   }
   #projects .projects__card--1::after,
