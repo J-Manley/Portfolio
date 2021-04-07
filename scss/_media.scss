@@ -115,6 +115,10 @@
       flex-direction: column;
       justify-content: space-between;
       height: unset;
+
+      &--expand {
+        display: none;
+      }
     }
 
     .projects__card__left {
