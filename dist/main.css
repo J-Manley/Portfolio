@@ -994,6 +994,9 @@ textarea {
     margin-bottom: 1rem;
     padding: 0;
   }
+  #projects .projects__card__right .projects__tech .projects__built div:nth-of-type(3) {
+    margin-right: 0.5rem;
+  }
   #projects .projects__card__right .projects__tech .projects__logo {
     width: 25px;
     height: 25px;

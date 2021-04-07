@@ -155,6 +155,10 @@
         margin-bottom: 1rem;
         padding: 0;
 
+        .projects__built div:nth-of-type(3) {
+          margin-right: 0.5rem;
+        }
+
         .projects__logo {
           width: 25px;
           height: 25px;
