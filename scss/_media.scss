@@ -32,6 +32,9 @@
       > svg {
         display: none;
       }
+      > span {
+        padding-left: 0;
+      }
     }
   }
 
@@ -42,7 +45,12 @@
     padding: 0;
 
     & .navBar__logo {
-      margin: 0.5rem 1.5rem 0.25rem 0;
+      margin: 0.5rem 1rem 0 0;
+
+      svg {
+        max-width: 90%;
+        max-height: 90%;
+      }
     }
 
     .navBar__social {
@@ -95,11 +103,71 @@
     .projects__title {
       font-size: 3rem;
       margin-bottom: 3rem;
-      padding-right: 1rem;
+      padding-right: 0.5rem;
     }
 
     .projects__text {
       font-size: 1rem;
+    }
+
+    .projects__cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: unset;
+    }
+
+    .projects__card__left {
+      z-index: -1;
+      height: 100%;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .projects__card__right {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      opacity: 0.85;
+
+      .projects__card__text {
+        padding: 0 2rem;
+        text-align: left;
+      }
+
+      .projects__tech {
+        margin-bottom: 1rem;
+        padding: 0 2rem;
+
+        .projects__logo {
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      .projects__links {
+        z-index: 3;
+        margin-bottom: 1rem;
+
+        > div {
+          display: none;
+        }
+
+        &__link {
+          margin: 0 0.5rem;
+          width: unset;
+        }
+      }
+    }
+
+    .projects__card--1::after,
+    .projects__card--2::after,
+    .projects__card--3::after,
+    .projects__card--4::after {
+      display: none;
     }
   }
 

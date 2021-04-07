@@ -50,6 +50,11 @@
     right: 0;
     cursor: pointer;
     padding: 0.5rem 0.75rem 0rem 0rem;
+    transition: color 200ms ease;
+
+    &:hover {
+      color: $accent-color;
+    }
   }
 
   &.show-modal {
@@ -370,10 +375,6 @@
 
 .projects__built > p {
   margin-bottom: 0.5rem;
-}
-
-.projects__built {
-  flex: 0 1 40%;
 }
 
 .projects__built div:nth-of-type(3) {
