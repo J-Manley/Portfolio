@@ -137,6 +137,10 @@
       height: auto;
       opacity: 0.85;
 
+      &--slide {
+        transform: translateX(0%);
+      }
+
       .projects__card__text {
         padding: 0 2rem;
         text-align: left;

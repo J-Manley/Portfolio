@@ -979,6 +979,9 @@ textarea {
     height: auto;
     opacity: 0.85;
   }
+  #projects .projects__card__right--slide {
+    transform: translateX(0%);
+  }
   #projects .projects__card__right .projects__card__text {
     padding: 0 2rem;
     text-align: left;
