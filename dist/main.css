@@ -982,6 +982,7 @@ textarea {
     flex-direction: column;
     height: auto;
     opacity: 0.85;
+    z-index: 2;
   }
   #projects .projects__card__right--slide {
     transform: translateX(0%);
