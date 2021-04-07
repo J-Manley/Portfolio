@@ -1010,6 +1010,7 @@ textarea {
   }
   #projects .projects__card__right .projects__links__link {
     width: unset;
+    padding: 0.5rem 1rem;
   }
   #projects .projects__card--1::after,
 #projects .projects__card--2::after,
