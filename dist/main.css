@@ -907,8 +907,8 @@ textarea {
     margin: 0.5rem 1rem 0 0;
   }
   #navBar .navBar__logo svg {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 75%;
+    max-height: 75%;
   }
   #navBar .navBar__social {
     display: none;
@@ -916,6 +916,9 @@ textarea {
   #navBar > ul {
     margin: 0;
     margin-left: 0.5rem;
+  }
+  #navBar > ul > li {
+    padding: 0 0.5rem 0.25rem 0.5rem;
   }
   #navBar > ul > li::after {
     display: none;
