@@ -982,7 +982,6 @@ textarea {
     flex-direction: column;
     height: auto;
     opacity: 0.85;
-    z-index: 2;
   }
   #projects .projects__card__right--slide {
     transform: translateX(0%);
@@ -1051,5 +1050,10 @@ textarea {
 
   #footer .footer__content {
     padding: 0 2rem;
+  }
+}
+@media (max-width: 500px) and (hover: none) {
+  a:hover {
+    color: inherit;
   }
 }

@@ -141,7 +141,6 @@
       flex-direction: column;
       height: auto;
       opacity: 0.85;
-      z-index: 2;
 
       &--slide {
         transform: translateX(0%);
@@ -225,6 +224,12 @@
   #footer {
     .footer__content {
       padding: 0 2rem;
+    }
+  }
+
+  @media (hover: none) {
+    a:hover {
+      color: inherit;
     }
   }
 }
