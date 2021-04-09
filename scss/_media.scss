@@ -21,10 +21,6 @@
       font-size: 1.1rem;
       margin-left: 0rem;
 
-      &:hover {
-        display: none;
-      }
-
       &::after {
         display: none;
       }
@@ -175,6 +171,10 @@
         &__link {
           width: unset;
           padding: 0.5rem 1rem;
+
+          &:active {
+            background-color: $primary-color;
+          }
         }
       }
     }
@@ -224,12 +224,6 @@
   #footer {
     .footer__content {
       padding: 0 2rem;
-    }
-  }
-
-  @media (hover: none) {
-    a:hover {
-      color: inherit;
     }
   }
 }

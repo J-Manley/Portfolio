@@ -713,6 +713,25 @@ textarea {
   margin-right: 0.85rem;
 }
 
+@media (hover: hover) {
+  .projects__links span {
+    transition: padding-right 250ms ease;
+  }
+  .projects__links__link svg {
+    transition: transform 250ms ease;
+  }
+  .projects__links__link:hover svg {
+    transform: scale(1.5);
+  }
+
+  .projects__links__link:hover {
+    background-color: #336699;
+    color: #fbfbf2;
+  }
+  .projects__links__link:hover > span {
+    padding-right: 10px;
+  }
+}
 .projects__links {
   width: 100%;
   display: flex;
@@ -722,22 +741,6 @@ textarea {
   transition: opacity, color, 250ms ease, background-color 400ms ease;
   max-width: 130px;
   width: 100%;
-}
-.projects__links__link:hover {
-  background-color: #336699;
-  color: #fbfbf2;
-}
-.projects__links__link:hover > span {
-  padding-right: 10px;
-}
-.projects__links span {
-  transition: padding-right 250ms ease;
-}
-.projects__links__link svg {
-  transition: transform 250ms ease;
-}
-.projects__links__link:hover svg {
-  transform: scale(1.5);
 }
 
 .projects__card--1::after {
@@ -884,9 +887,6 @@ textarea {
     font-size: 1.1rem;
     margin-left: 0rem;
   }
-  .btn__main:hover {
-    display: none;
-  }
   .btn__main::after {
     display: none;
   }
@@ -1011,6 +1011,9 @@ textarea {
     width: unset;
     padding: 0.5rem 1rem;
   }
+  #projects .projects__card__right .projects__links__link:active {
+    background-color: #fbfbf2;
+  }
   #projects .projects__card--1::after,
 #projects .projects__card--2::after,
 #projects .projects__card--3::after,
@@ -1050,10 +1053,5 @@ textarea {
 
   #footer .footer__content {
     padding: 0 2rem;
-  }
-}
-@media (max-width: 500px) and (hover: none) {
-  a:hover {
-    color: inherit;
   }
 }
