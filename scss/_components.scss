@@ -381,7 +381,7 @@
   margin-right: 0.85rem;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .projects__links {
     width: 100%;
     display: flex;
