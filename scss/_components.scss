@@ -383,6 +383,25 @@
 
 @media (hover: hover) {
   .projects__links {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    &__link {
+      transition: opacity, color, 250ms ease, background-color 400ms ease;
+      max-width: 130px;
+      width: 100%;
+
+      &:hover {
+        background-color: $accent-color;
+        color: $primary-color;
+
+        > span {
+          padding-right: 10px;
+        }
+      }
+    }
+
     span {
       transition: padding-right 250ms ease;
     }
@@ -394,26 +413,6 @@
     &__link:hover svg {
       transform: scale(1.5);
     }
-  }
-  .projects__links__link:hover {
-    background-color: $accent-color;
-    color: $primary-color;
-
-    > span {
-      padding-right: 10px;
-    }
-  }
-}
-
-.projects__links {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-
-  &__link {
-    transition: opacity, color, 250ms ease, background-color 400ms ease;
-    max-width: 130px;
-    width: 100%;
   }
 }
 
