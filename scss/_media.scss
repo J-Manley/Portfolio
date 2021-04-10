@@ -126,6 +126,7 @@
     .projects__card__left {
       z-index: -1;
       height: 100%;
+      display: none;
 
       &::before {
         display: none;
@@ -186,7 +187,6 @@
       display: none;
     }
   }
-
   #contact {
     scroll-margin-top: 150px;
     margin-bottom: 2rem;

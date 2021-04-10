@@ -971,6 +971,7 @@ textarea {
   #projects .projects__card__left {
     z-index: -1;
     height: 100%;
+    display: none;
   }
   #projects .projects__card__left::before {
     display: none;

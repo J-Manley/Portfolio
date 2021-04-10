@@ -26,15 +26,19 @@ const cardLeft = document.querySelectorAll(".projects__card__left");
 
 for (let i = 0; i < cards.length; i++) {
   cards[i].addEventListener("mouseenter", () => {
-    cards[i].classList.add("projects__cards--expand");
-    cardRight[i].classList.add("projects__card__right--slide");
+    if (window.innerWidth > 768) {
+      cards[i].classList.add("projects__cards--expand");
+      cardRight[i].classList.add("projects__card__right--slide");
+    }
   });
 }
 
 for (let i = 0; i < cards.length; i++) {
   cards[i].addEventListener("mouseleave", () => {
-    cards[i].classList.remove("projects__cards--expand");
-    cardRight[i].classList.remove("projects__card__right--slide");
+    if (window.innerWidth > 768) {
+      cards[i].classList.remove("projects__cards--expand");
+      cardRight[i].classList.remove("projects__card__right--slide");
+    }
   });
 }
 
