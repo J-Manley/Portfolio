@@ -1,15 +1,183 @@
 @use "base.scss" as *;
 
-// Tablets & Smaller
-// @media (max-width: 768px) {
-//   #header-home {
-//     height: 30rem;
+// Tablets
+@media (max-width: 768px) {
+  .btn {
+    max-width: unset;
+    width: unset;
 
-//     .header-content {
-//       padding-top: 5rem;
-//     }
-//   }
-// }
+    &__main {
+      font-size: 1.1rem;
+      margin-left: 0rem;
+
+      &::after {
+        display: none;
+      }
+
+      > svg {
+        display: none;
+      }
+
+      > span {
+        padding-left: 0;
+        color: $primary-color;
+      }
+    }
+  }
+
+  #hero {
+    .hero__content {
+      padding-top: 15rem;
+
+      .hero__title {
+        margin: 0 auto 0.5rem auto;
+        padding: 0 1rem;
+      }
+
+      .hero__text {
+        font-size: 1.25rem;
+        padding: 0 1.5rem;
+      }
+    }
+  }
+
+  #about {
+    scroll-margin-top: 200px;
+    margin-bottom: 10rem;
+
+    .about__title {
+      font-size: 3rem;
+      margin-right: 0.5rem;
+    }
+
+    .about__text {
+      font-size: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  #projects {
+    scroll-margin-top: 125px;
+
+    .projects__title {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+      padding-right: 0.5rem;
+    }
+
+    .projects__text {
+      font-size: 1rem;
+    }
+
+    .projects__cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: unset;
+
+      &--expand {
+        display: none;
+      }
+    }
+
+    .projects__card__left {
+      z-index: -1;
+      height: 100%;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .projects__card__right {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      opacity: 0.85;
+
+      &--slide {
+        transform: translateX(0%);
+      }
+
+      .projects__card__text {
+        padding: 0 2rem;
+        text-align: left;
+      }
+
+      .projects__tech {
+        margin-bottom: 1rem;
+        padding: 0;
+
+        .projects__built div:nth-of-type(3) {
+          margin-right: 0.7rem;
+        }
+
+        .projects__logo {
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      .projects__links {
+        margin-bottom: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+        > div {
+          display: none;
+        }
+
+        &__link {
+          width: unset;
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
+
+    .projects__card--1::after,
+    .projects__card--2::after,
+    .projects__card--3::after,
+    .projects__card--4::after {
+      display: none;
+    }
+  }
+
+  #contact {
+    scroll-margin-top: 150px;
+    margin-bottom: 2rem;
+
+    .container {
+      padding: 0;
+    }
+
+    .contact__title {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact__form {
+      margin: 0;
+      width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+      opacity: 1;
+      background-color: $primary-color;
+
+      .text-input {
+        color: $secondary-color;
+        border-bottom: 2px solid $secondary-color;
+      }
+    }
+    button[type="submit"] {
+      width: 50%;
+      background-color: $secondary-color;
+      color: $primary-color;
+      padding: 0.8rem 2rem;
+    }
+  }
+}
 
 // Phones
 @media (max-width: 500px) {
@@ -28,6 +196,7 @@
       > svg {
         display: none;
       }
+
       > span {
         padding-left: 0;
         color: $primary-color;
@@ -36,30 +205,26 @@
   }
 
   #navBar {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0;
+    padding: 0.5rem 1rem;
 
-    & .navBar__logo {
-      margin: 0.25rem 1.25rem 0 0;
+    // & .navBar__logo {
+    //   margin: 0.25rem 1.25rem 0 0;
 
-      svg {
-        max-width: 75%;
-        max-height: 75%;
-      }
-    }
+    //   svg {
+    //     max-width: 75%;
+    //     max-height: 75%;
+    //   }
+    // }
 
     .navBar__social {
       display: none;
     }
 
     > ul {
-      margin: 0;
-      margin-left: 0.5rem;
+      // margin: 0;
 
       > li {
-        padding: 0 0.5rem 0.25rem 0.5rem;
+        padding: 0;
 
         &::after {
           display: none;
@@ -126,7 +291,6 @@
     .projects__card__left {
       z-index: -1;
       height: 100%;
-      display: none;
 
       &::before {
         display: none;
