@@ -1090,7 +1090,7 @@ textarea {
   }
 
   #projects {
-    scroll-margin-top: 125px;
+    scroll-margin-top: 100px;
   }
   #projects .projects__title {
     font-size: 3rem;
