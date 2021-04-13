@@ -1046,6 +1046,10 @@ textarea {
   #navBar {
     padding: 0.5rem 1rem;
   }
+  #navBar .navBar__logo svg {
+    max-width: 75%;
+    max-height: 75%;
+  }
   #navBar .navBar__social {
     display: none;
   }

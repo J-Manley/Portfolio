@@ -207,14 +207,12 @@
   #navBar {
     padding: 0.5rem 1rem;
 
-    // & .navBar__logo {
-    //   margin: 0.25rem 1.25rem 0 0;
-
-    //   svg {
-    //     max-width: 75%;
-    //     max-height: 75%;
-    //   }
-    // }
+    & .navBar__logo {
+      svg {
+        max-width: 75%;
+        max-height: 75%;
+      }
+    }
 
     .navBar__social {
       display: none;
