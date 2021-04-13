@@ -1054,6 +1054,9 @@ textarea {
   #navBar .navBar__social {
     display: none;
   }
+  #navBar > ul {
+    margin: 0;
+  }
   #navBar > ul > li {
     padding: 0;
   }
