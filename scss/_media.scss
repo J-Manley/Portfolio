@@ -179,17 +179,12 @@
   }
 }
 
-button:focus {
-  border-color: transparent !important;
-  outline: none;
-}
-
 // Phones
 @media (max-width: 500px) {
   .btn {
     max-width: unset;
     width: unset;
-    &:focus {
+    &:active {
       background-color: red;
     }
 
