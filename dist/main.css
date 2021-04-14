@@ -880,6 +880,7 @@ textarea {
   .btn {
     max-width: unset;
     width: unset;
+    -webkit-tap-highlight-color: transparent;
   }
   .btn__main {
     font-size: 1.1rem;
@@ -1023,6 +1024,11 @@ textarea {
     padding: 0.8rem 2rem;
   }
 }
+button:focus {
+  border-color: transparent !important;
+  outline: none;
+}
+
 @media (max-width: 500px) {
   .btn {
     max-width: unset;
