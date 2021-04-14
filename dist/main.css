@@ -1037,7 +1037,7 @@ textarea {
     width: unset;
   }
   .btn:active {
-    background-color: red;
+    background-color: #4080bf;
   }
   .btn__main {
     font-size: 1.1rem;
@@ -1164,6 +1164,9 @@ textarea {
   #projects .projects__card__right .projects__links__link {
     width: unset;
     padding: 0.5rem 1rem;
+  }
+  #projects .projects__card__right .projects__links__link:active {
+    background-color: #efefcb;
   }
   #projects .projects__card--1::after,
 #projects .projects__card--2::after,

@@ -185,7 +185,7 @@
     max-width: unset;
     width: unset;
     &:active {
-      background-color: red;
+      background-color: lighten($accent-color, 10%);
     }
 
     &__main {
@@ -342,6 +342,9 @@
         &__link {
           width: unset;
           padding: 0.5rem 1rem;
+          &:active {
+            background-color: darken($primary-color, 10%);
+          }
         }
       }
     }
