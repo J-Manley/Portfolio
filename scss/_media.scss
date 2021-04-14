@@ -141,28 +141,33 @@
 
       .projects__card__text {
         padding: 0 2rem;
-        text-align: left;
+        margin-right: 2rem;
       }
 
       .projects__tech {
-        margin-bottom: 1rem;
         padding: 0;
+        justify-content: center;
 
-        .projects__built div:nth-of-type(3) {
-          margin-right: 0.7rem;
+        .projects__design {
+          margin-right: 0.5rem;
+        }
+
+        .projects__built {
+          margin-left: 1.5rem;
         }
 
         .projects__logo {
-          width: 25px;
-          height: 25px;
+          width: 30px;
+          height: 30px;
         }
       }
 
       .projects__links {
         margin-bottom: 1rem;
+        padding: 0;
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
 
         > div {
           display: none;
@@ -171,6 +176,7 @@
         &__link {
           width: unset;
           padding: 0.5rem 1rem;
+          margin: 0 0.75rem;
         }
       }
     }
@@ -350,7 +356,6 @@
 
       .projects__card__text {
         padding: 0 2rem;
-        text-align: left;
       }
 
       .projects__tech {
