@@ -5,6 +5,9 @@
   .btn {
     max-width: unset;
     width: unset;
+    &:focus {
+      background-color: red;
+    }
 
     &__main {
       font-size: 1.1rem;

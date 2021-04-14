@@ -889,6 +889,9 @@ textarea {
     max-width: unset;
     width: unset;
   }
+  .btn:focus {
+    background-color: red;
+  }
   .btn__main {
     font-size: 1.1rem;
     margin-left: 0rem;
