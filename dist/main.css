@@ -904,6 +904,32 @@ textarea {
     color: #fbfbf2;
   }
 
+  #navBar .navBar__logo svg {
+    max-width: 75%;
+    max-height: 75%;
+  }
+  #navBar > ul > li::after {
+    display: none;
+  }
+  #navBar .navBar__icon {
+    display: inline-block;
+    margin-right: 0.5rem;
+    color: #fbfbf2;
+    transition: transform 250ms ease;
+  }
+  #navBar .navBar__icon:hover {
+    transform: none;
+  }
+  #navBar .navBar__icon:hover .fa-github {
+    color: unset;
+  }
+  #navBar .navBar__icon:hover .fa-linkedin {
+    color: unset;
+  }
+  #navBar .navBar__icon:hover .fa-twitter {
+    color: unset;
+  }
+
   #hero .hero__content {
     padding-top: 15rem;
   }
@@ -917,7 +943,7 @@ textarea {
   }
 
   #about {
-    scroll-margin-top: 200px;
+    scroll-margin-top: 400px;
     margin-bottom: 10rem;
   }
   #about .about__title {
@@ -1002,7 +1028,6 @@ textarea {
   }
 
   #contact {
-    scroll-margin-top: 150px;
     margin-bottom: 2rem;
   }
   #contact .container {
@@ -1164,9 +1189,6 @@ textarea {
   #projects .projects__card__right .projects__links__link {
     width: unset;
     padding: 0.5rem 1rem;
-  }
-  #projects .projects__card__right .projects__links__link:active {
-    background-color: #efefcb;
   }
   #projects .projects__card--1::after,
 #projects .projects__card--2::after,

@@ -25,6 +25,45 @@
     }
   }
 
+  #navBar {
+    & .navBar__logo {
+      svg {
+        max-width: 75%;
+        max-height: 75%;
+      }
+    }
+
+    > ul {
+      > li {
+        &::after {
+          display: none;
+        }
+      }
+    }
+    .navBar__icon {
+      display: inline-block;
+      margin-right: 0.5rem;
+      color: $primary-color;
+      transition: transform 250ms ease;
+
+      &:hover {
+        transform: none;
+
+        .fa-github {
+          color: unset;
+        }
+
+        .fa-linkedin {
+          color: unset;
+        }
+
+        .fa-twitter {
+          color: unset;
+        }
+      }
+    }
+  }
+
   #hero {
     .hero__content {
       padding-top: 15rem;
@@ -42,7 +81,7 @@
   }
 
   #about {
-    scroll-margin-top: 200px;
+    scroll-margin-top: 400px;
     margin-bottom: 10rem;
 
     .about__title {
@@ -145,7 +184,6 @@
   }
 
   #contact {
-    scroll-margin-top: 150px;
     margin-bottom: 2rem;
 
     .container {
@@ -342,9 +380,6 @@
         &__link {
           width: unset;
           padding: 0.5rem 1rem;
-          &:active {
-            background-color: darken($primary-color, 10%);
-          }
         }
       }
     }
