@@ -885,7 +885,7 @@ textarea {
   overflow: hidden;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 500px) {
   .btn {
     max-width: unset;
     width: unset;
@@ -1170,6 +1170,7 @@ textarea {
   }
   #projects .projects__card__right .projects__card__text {
     padding: 0 2rem;
+    margin-left: 0.5rem;
   }
   #projects .projects__card__right .projects__tech {
     margin-bottom: 1rem;

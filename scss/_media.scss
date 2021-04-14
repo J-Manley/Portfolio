@@ -1,7 +1,7 @@
 @use "base.scss" as *;
 
 // Tablets
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 500px) {
   .btn {
     max-width: unset;
     width: unset;
@@ -356,6 +356,7 @@
 
       .projects__card__text {
         padding: 0 2rem;
+        margin-left: 0.5rem;
       }
 
       .projects__tech {
