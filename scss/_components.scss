@@ -279,8 +279,8 @@
       left: 37%;
       height: 75px;
       width: 75px;
-      background: $accent-color;
-      border-radius: 50%;
+      border: 2px solid $accent-color;
+      border-radius: 5px;
       z-index: -1;
     }
   }
@@ -310,8 +310,8 @@
       left: 38%;
       height: 75px;
       width: 75px;
-      background: $accent-color;
-      border-radius: 50%;
+      border: 2px solid $accent-color;
+      border-radius: 5px;
       z-index: -1;
     }
   }
@@ -534,6 +534,24 @@
 #contact {
   padding-top: 10rem 0 6rem 0;
   scroll-margin-top: 120px;
+
+  .contact__title {
+    position: relative;
+    padding-top: 1rem;
+    color: $secondary-text-color;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10%;
+      left: 34.5%;
+      height: 75px;
+      width: 75px;
+      border: 2px solid $accent-color;
+      border-radius: 5px;
+      z-index: -1;
+    }
+  }
 
   .contact__form {
     display: flex;

@@ -628,8 +628,8 @@ textarea {
   left: 37%;
   height: 75px;
   width: 75px;
-  background: #f7e733;
-  border-radius: 50%;
+  border: 2px solid #f7e733;
+  border-radius: 5px;
   z-index: -1;
 }
 #about .about__text {
@@ -654,8 +654,8 @@ textarea {
   left: 38%;
   height: 75px;
   width: 75px;
-  background: #f7e733;
-  border-radius: 50%;
+  border: 2px solid #f7e733;
+  border-radius: 5px;
   z-index: -1;
 }
 #projects .projects__cards {
@@ -853,6 +853,22 @@ textarea {
 #contact {
   padding-top: 10rem 0 6rem 0;
   scroll-margin-top: 120px;
+}
+#contact .contact__title {
+  position: relative;
+  padding-top: 1rem;
+  color: #bfbfbf;
+}
+#contact .contact__title::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 34.5%;
+  height: 75px;
+  width: 75px;
+  border: 2px solid #f7e733;
+  border-radius: 5px;
+  z-index: -1;
 }
 #contact .contact__form {
   display: flex;
@@ -1161,6 +1177,12 @@ textarea {
     font-size: 3rem;
     margin-right: 0.5rem;
   }
+  #about .about__title::before {
+    top: 11%;
+    left: 11%;
+    height: 60px;
+    width: 60px;
+  }
   #about .about__text {
     font-size: 1rem;
     padding-right: 1rem;
@@ -1173,6 +1195,12 @@ textarea {
     font-size: 3rem;
     margin-bottom: 3rem;
     padding-right: 0.5rem;
+  }
+  #projects .projects__title::before {
+    top: 11%;
+    left: 14%;
+    height: 60px;
+    width: 60px;
   }
   #projects .projects__text {
     font-size: 1rem;
@@ -1199,7 +1227,7 @@ textarea {
     display: flex;
     flex-direction: column;
     height: auto;
-    opacity: 0.85;
+    opacity: 0.9;
   }
   #projects .projects__card__right--slide {
     transform: translateX(0%);
@@ -1231,7 +1259,6 @@ textarea {
   #projects .projects__card__right .projects__links__link {
     width: unset;
     padding: 0.5rem 1rem;
-    color: #fbfbf2;
   }
   #projects .projects__card--1::after,
 #projects .projects__card--2::after,
@@ -1249,7 +1276,13 @@ textarea {
   }
   #contact .contact__title {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  #contact .contact__title::before {
+    top: 11%;
+    left: 10%;
+    height: 60px;
+    width: 60px;
   }
   #contact .contact__form {
     margin: 0;
@@ -1265,8 +1298,6 @@ textarea {
   }
   #contact button[type=submit] {
     width: 50%;
-    background-color: #333;
-    color: #262626;
     padding: 0.8rem 2rem;
   }
 
