@@ -1147,6 +1147,7 @@ textarea {
     flex-direction: column;
     justify-content: space-between;
     height: unset;
+    margin: 0 auto 5rem auto;
   }
   #projects .projects__cards--expand {
     display: none;
