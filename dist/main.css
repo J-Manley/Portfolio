@@ -507,8 +507,8 @@ textarea {
   transform-origin: left;
 }
 .btn__secondary {
-  color: #333;
-  background-color: #262626;
+  color: #262626;
+  background-color: #fbfbf2;
   padding: 0.7rem 1rem;
 }
 
@@ -625,7 +625,7 @@ textarea {
   content: "";
   position: absolute;
   top: 10%;
-  left: 34%;
+  left: 37%;
   height: 75px;
   width: 75px;
   background: #f7e733;
@@ -651,7 +651,7 @@ textarea {
   content: "";
   position: absolute;
   top: 10%;
-  left: 35.5%;
+  left: 38%;
   height: 75px;
   width: 75px;
   background: #f7e733;
@@ -691,7 +691,7 @@ textarea {
 }
 .projects__card__left::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.25);
   position: absolute;
   top: 0;
   right: 0;
@@ -764,7 +764,6 @@ textarea {
     transition: opacity, color, 250ms ease, background-color 400ms ease;
     max-width: 130px;
     width: 100%;
-    color: #fbfbf2;
   }
   .projects__links__link:hover {
     background-color: #f7e733;
@@ -794,8 +793,9 @@ textarea {
   border-radius: 5px;
   font-size: 1.875rem;
   line-height: 2.25rem;
-  border: 2px solid #262626;
-  color: #262626;
+  border: 2px solid #333;
+  background-color: #333;
+  color: #fbfbf2;
   transition: opacity 400ms ease;
 }
 
@@ -810,8 +810,9 @@ textarea {
   border-radius: 5px;
   font-size: 1.875rem;
   line-height: 2.25rem;
-  border: 2px solid #262626;
-  color: #262626;
+  border: 2px solid #333;
+  background-color: #333;
+  color: #fbfbf2;
   transition: opacity 450ms ease;
 }
 
@@ -826,8 +827,9 @@ textarea {
   border-radius: 5px;
   font-size: 1.875rem;
   line-height: 2.25rem;
-  border: 2px solid #262626;
-  color: #262626;
+  border: 2px solid #333;
+  background-color: #333;
+  color: #fbfbf2;
   transition: opacity 450ms ease;
 }
 
@@ -842,8 +844,9 @@ textarea {
   border-radius: 5px;
   font-size: 1.875rem;
   line-height: 2.25rem;
-  border: 2px solid #262626;
-  color: #262626;
+  border: 2px solid #333;
+  background-color: #333;
+  color: #fbfbf2;
   transition: opacity 450ms ease;
 }
 
@@ -860,11 +863,9 @@ textarea {
   width: 60%;
   border-radius: 5px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
-  opacity: 0.75;
-  transition: opacity, box-shadow, 500ms ease;
+  transition: box-shadow, 500ms ease;
 }
 #contact .contact__form:hover {
-  opacity: 1;
   box-shadow: none;
 }
 #contact .contact__form__text-fields {
@@ -899,7 +900,7 @@ textarea {
   width: 100%;
   max-width: 185px;
   background-color: #fbfbf2;
-  color: #fbfbf2;
+  color: #333;
   font-family: "Poppins", helvetica, sans-serif;
   padding: 0.8rem 2rem;
   transition: opacity, color, 250ms ease, background-color 400ms ease;
@@ -1230,6 +1231,7 @@ textarea {
   #projects .projects__card__right .projects__links__link {
     width: unset;
     padding: 0.5rem 1rem;
+    color: #fbfbf2;
   }
   #projects .projects__card--1::after,
 #projects .projects__card--2::after,
