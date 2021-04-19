@@ -1,7 +1,9 @@
 $font-family: "Poppins", helvetica, sans-serif;
-$primary-color: #fbfbf2;
-$secondary-color: #000;
-$accent-color: #336699;
+$primary-color: #262626;
+$secondary-color: #333;
+$accent-color: #f7e733;
+$primary-text-color: #fbfbf2;
+$secondary-text-color: #bfbfbf;
 $dark-mode-primary-color: #e6dbcb;
 $dark-mode-secondary-color: #e6dbcb;
 $website-width: 1280px;
@@ -19,7 +21,7 @@ html {
 body {
   background: $primary-color;
   font-family: $font-family;
-  color: $secondary-color;
+  color: $primary-text-color;
   min-height: 100vh;
   position: relative;
   z-index: 1;
@@ -34,7 +36,6 @@ img {
 svg {
   width: auto;
   height: 100%;
-  fill: $primary-color;
 }
 
 ul {
@@ -43,11 +44,11 @@ ul {
 
 a {
   text-decoration: none;
-  color: $primary-color;
+  color: $primary-text-color;
 }
 
 label {
-  color: $secondary-color;
+  color: $primary-text-color;
   text-align: left;
 }
 

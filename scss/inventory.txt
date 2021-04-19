@@ -23,6 +23,8 @@
 #3581B8 - Steel Blue
 #072AC8 - Persian Blue
 #819B8F - Green
+#262626 - Gray
+#737373 - Light Gray
 
 
 Combinations of individual colours

@@ -9,9 +9,9 @@ html {
 }
 
 body {
-  background: #fbfbf2;
+  background: #262626;
   font-family: "Poppins", helvetica, sans-serif;
-  color: #000;
+  color: #fbfbf2;
   min-height: 100vh;
   position: relative;
   z-index: 1;
@@ -26,7 +26,6 @@ img {
 svg {
   width: auto;
   height: 100%;
-  fill: #fbfbf2;
 }
 
 ul {
@@ -39,7 +38,7 @@ a {
 }
 
 label {
-  color: #000;
+  color: #fbfbf2;
   text-align: left;
 }
 
@@ -412,8 +411,8 @@ textarea {
   padding: 0.5rem 0.75rem 0rem 0rem;
 }
 .modal__inner {
-  background-color: #fbfbf2;
-  border: 2px solid #336699;
+  background-color: #262626;
+  border: 2px solid #f7e733;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   position: absolute;
@@ -427,7 +426,7 @@ textarea {
   padding-top: 2rem;
 }
 .modal__inner .modal__content {
-  border: 1px solid #336699;
+  border: 1px solid #f7e733;
 }
 .modal__btn--close {
   background: transparent;
@@ -440,7 +439,7 @@ textarea {
   transition: color 200ms ease;
 }
 .modal__btn--close:hover {
-  color: #336699;
+  color: #f7e733;
 }
 .modal.show-modal {
   display: block;
@@ -465,8 +464,8 @@ textarea {
 }
 
 .btn__main {
-  color: #fbfbf2;
-  background-color: #336699;
+  color: #262626;
+  background-color: #f7e733;
   position: relative;
   overflow: hidden;
   transition: all 400ms ease;
@@ -478,8 +477,8 @@ textarea {
   padding-left: 12px;
 }
 .btn__main:hover {
-  border: 2px solid #336699;
-  color: #336699;
+  border: 2px solid #f7e733;
+  color: #f7e733;
 }
 .btn__main:hover .fa-arrow-right {
   opacity: 1;
@@ -497,7 +496,7 @@ textarea {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fbfbf2;
+  background: #262626;
   z-index: -1;
   transform: scaleX(0);
   transform-origin: right;
@@ -508,8 +507,8 @@ textarea {
   transform-origin: left;
 }
 .btn__secondary {
-  color: #000;
-  background-color: #fbfbf2;
+  color: #333;
+  background-color: #262626;
   padding: 0.7rem 1rem;
 }
 
@@ -542,9 +541,8 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000;
-  color: #fbfbf2;
-  border-bottom: 2px solid #336699;
+  background-color: #333;
+  border-bottom: 2px solid #f7e733;
   position: sticky;
   top: 0;
   z-index: 4;
@@ -566,7 +564,7 @@ textarea {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: #336699;
+  background: #f7e733;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 250ms ease-in;
@@ -596,7 +594,6 @@ textarea {
 
 #hero {
   height: 100vh;
-  color: #000;
 }
 #hero .hero__content {
   padding-top: 12rem;
@@ -606,6 +603,10 @@ textarea {
 #hero .hero__content .hero__title {
   margin-left: 2rem;
   margin-bottom: 0.5rem;
+  color: #fbfbf2;
+}
+#hero .hero__content .hero__text {
+  color: #bfbfbf;
 }
 #hero .hero__content span {
   transition: padding-right 250ms ease;
@@ -614,6 +615,22 @@ textarea {
 #about {
   margin-bottom: 21rem;
   scroll-margin-top: 250px;
+}
+#about .about__title {
+  position: relative;
+  padding-top: 1rem;
+  color: #bfbfbf;
+}
+#about .about__title::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 34%;
+  height: 75px;
+  width: 75px;
+  background: #f7e733;
+  border-radius: 50%;
+  z-index: -1;
 }
 #about .about__text {
   max-width: 700px;
@@ -624,6 +641,22 @@ textarea {
 
 #projects {
   scroll-margin-top: 100px;
+}
+#projects .projects__title {
+  position: relative;
+  padding-top: 1rem;
+  color: #bfbfbf;
+}
+#projects .projects__title::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 35.5%;
+  height: 75px;
+  width: 75px;
+  background: #f7e733;
+  border-radius: 50%;
+  z-index: -1;
 }
 #projects .projects__cards {
   margin: 0 auto 10rem auto;
@@ -654,7 +687,7 @@ textarea {
 }
 .projects__card__left > img {
   border-radius: 5px;
-  border: 2px solid #336699;
+  border: 2px solid #f7e733;
 }
 .projects__card__left::before {
   content: "";
@@ -675,13 +708,12 @@ textarea {
   height: 430px;
   max-width: 525px;
   width: 100%;
-  background-color: #000;
-  color: #fbfbf2;
+  background-color: #333;
   border-radius: 5px;
   transition: all 400ms ease;
 }
 .projects__card__right > h1 {
-  text-decoration: underline #336699;
+  text-decoration: underline #f7e733;
 }
 .projects__card__right--slide {
   transform: translateX(102%);
@@ -732,10 +764,11 @@ textarea {
     transition: opacity, color, 250ms ease, background-color 400ms ease;
     max-width: 130px;
     width: 100%;
+    color: #fbfbf2;
   }
   .projects__links__link:hover {
-    background-color: #336699;
-    color: #fbfbf2;
+    background-color: #f7e733;
+    color: #262626;
   }
   .projects__links__link:hover > span {
     padding-right: 10px;
@@ -761,8 +794,8 @@ textarea {
   border-radius: 5px;
   font-size: 1.875rem;
   line-height: 2.25rem;
-  border: 2px solid #fbfbf2;
-  color: #fbfbf2;
+  border: 2px solid #262626;
+  color: #262626;
   transition: opacity 400ms ease;
 }
 
@@ -777,8 +810,8 @@ textarea {
   border-radius: 5px;
   font-size: 1.875rem;
   line-height: 2.25rem;
-  border: 2px solid #fbfbf2;
-  color: #fbfbf2;
+  border: 2px solid #262626;
+  color: #262626;
   transition: opacity 450ms ease;
 }
 
@@ -793,8 +826,8 @@ textarea {
   border-radius: 5px;
   font-size: 1.875rem;
   line-height: 2.25rem;
-  border: 2px solid #fbfbf2;
-  color: #fbfbf2;
+  border: 2px solid #262626;
+  color: #262626;
   transition: opacity 450ms ease;
 }
 
@@ -809,8 +842,8 @@ textarea {
   border-radius: 5px;
   font-size: 1.875rem;
   line-height: 2.25rem;
-  border: 2px solid #fbfbf2;
-  color: #fbfbf2;
+  border: 2px solid #262626;
+  color: #262626;
   transition: opacity 450ms ease;
 }
 
@@ -823,7 +856,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   margin: 2rem auto;
-  background-color: #000;
+  background-color: #333;
   width: 60%;
   border-radius: 5px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
@@ -843,7 +876,7 @@ textarea {
   padding: 0.5rem 1rem;
   background: transparent;
   border: none;
-  border-bottom: 2px solid #fbfbf2;
+  border-bottom: 2px solid #262626;
   color: #fbfbf2;
 }
 #contact .contact__form .message-input {
@@ -851,8 +884,8 @@ textarea {
   font-family: "Poppins", helvetica, sans-serif;
 }
 #contact .contact__form > button:hover {
-  background-color: #336699;
-  color: #fbfbf2;
+  background-color: #f7e733;
+  color: #262626;
 }
 #contact .contact__form > button svg {
   transition: transform, padding-left, color, 250ms ease;
@@ -860,22 +893,22 @@ textarea {
 #contact .contact__form > button:hover svg {
   transform: scale(1.5) translateX(25%) translateY(-20%);
   padding-left: 0.1rem;
-  color: #fbfbf2;
+  color: #262626;
 }
 #contact button[type=submit] {
   width: 100%;
   max-width: 185px;
   background-color: #fbfbf2;
-  color: #000;
+  color: #fbfbf2;
   font-family: "Poppins", helvetica, sans-serif;
   padding: 0.8rem 2rem;
   transition: opacity, color, 250ms ease, background-color 400ms ease;
 }
 
 #footer {
-  background-color: #000;
+  background-color: #333;
   color: #fbfbf2;
-  border-top: 2px solid #336699;
+  border-top: 2px solid #f7e733;
 }
 
 .container {
@@ -902,7 +935,7 @@ textarea {
   }
   .btn__main > span {
     padding-left: 0;
-    color: #fbfbf2;
+    color: #262626;
   }
 
   #navBar .navBar__logo svg {
@@ -915,7 +948,7 @@ textarea {
   #navBar .navBar__icon {
     display: inline-block;
     margin-right: 0.5rem;
-    color: #fbfbf2;
+    color: #262626;
     transition: transform 250ms ease;
   }
   #navBar .navBar__icon:hover {
@@ -972,6 +1005,7 @@ textarea {
     flex-direction: column;
     justify-content: space-between;
     height: unset;
+    margin: 0 auto 5rem auto;
   }
   #projects .projects__cards--expand {
     display: none;
@@ -1049,16 +1083,16 @@ textarea {
     border-radius: 0;
     box-shadow: none;
     opacity: 1;
-    background-color: #fbfbf2;
+    background-color: #262626;
   }
   #contact .contact__form .text-input {
-    color: #000;
-    border-bottom: 2px solid #000;
+    color: #333;
+    border-bottom: 2px solid #333;
   }
   #contact button[type=submit] {
     width: 50%;
-    background-color: #000;
-    color: #fbfbf2;
+    background-color: #333;
+    color: #262626;
     padding: 0.8rem 2rem;
   }
 }
@@ -1068,7 +1102,7 @@ textarea {
     width: unset;
   }
   .btn:active {
-    background-color: #4080bf;
+    background-color: #f9ed64;
   }
   .btn__main {
     font-size: 1.1rem;
@@ -1082,7 +1116,7 @@ textarea {
   }
   .btn__main > span {
     padding-left: 0;
-    color: #fbfbf2;
+    color: #262626;
   }
 
   #navBar {
@@ -1221,16 +1255,16 @@ textarea {
     border-radius: 0;
     box-shadow: none;
     opacity: 1;
-    background-color: #fbfbf2;
+    background-color: #262626;
   }
   #contact .contact__form .text-input {
-    color: #000;
-    border-bottom: 2px solid #000;
+    color: #333;
+    border-bottom: 2px solid #333;
   }
   #contact button[type=submit] {
     width: 50%;
-    background-color: #000;
-    color: #fbfbf2;
+    background-color: #333;
+    color: #262626;
     padding: 0.8rem 2rem;
   }
 
