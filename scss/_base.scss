@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background: $primary-color;
+  background: linear-gradient(to right, $primary-color, #303030);
   font-family: $font-family;
   color: $primary-text-color;
   min-height: 100vh;

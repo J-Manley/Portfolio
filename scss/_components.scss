@@ -371,7 +371,7 @@
   height: 430px;
   max-width: 525px;
   width: 100%;
-  background-color: $secondary-color;
+  background: linear-gradient(to right, $secondary-color, #3d3d3d);
   border-radius: 5px;
   transition: all 400ms ease;
 
@@ -558,7 +558,7 @@
     flex-direction: column;
     align-items: center;
     margin: 2rem auto;
-    background-color: $secondary-color;
+    background: linear-gradient(to right, $secondary-color, #3d3d3d);
     width: 60%;
     border-radius: 5px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
@@ -618,4 +618,34 @@
   background-color: $secondary-color;
   color: $primary-text-color;
   border-top: 2px solid $accent-color;
+
+  .figma__text:hover {
+    .figma__text--1 {
+      color: #0acf83;
+    }
+    .figma__text--2 {
+      color: #a259ff;
+    }
+    .figma__text--3 {
+      color: #f24e1e;
+    }
+    .figma__text--4 {
+      color: #1abcfe;
+    }
+    .figma__text--5 {
+      color: #ff7262;
+    }
+  }
+
+  .html__text:hover {
+    color: #f24e1e;
+  }
+
+  .scss__text:hover {
+    color: #c69;
+  }
+
+  .js__text:hover {
+    color: #f0db4f;
+  }
 }
