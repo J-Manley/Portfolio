@@ -989,7 +989,6 @@ textarea {
   #navBar .navBar__icon {
     display: inline-block;
     margin-right: 0.5rem;
-    color: #262626;
     transition: transform 250ms ease;
   }
   #navBar .navBar__icon:hover {
@@ -1025,6 +1024,12 @@ textarea {
     font-size: 3rem;
     margin-right: 0.5rem;
   }
+  #about .about__title::before {
+    top: 11%;
+    left: 31%;
+    height: 60px;
+    width: 60px;
+  }
   #about .about__text {
     font-size: 1rem;
     padding-right: 1rem;
@@ -1037,6 +1042,12 @@ textarea {
     font-size: 3rem;
     margin-bottom: 3rem;
     padding-right: 0.5rem;
+  }
+  #projects .projects__title::before {
+    top: 11%;
+    left: 32.5%;
+    height: 60px;
+    width: 60px;
   }
   #projects .projects__text {
     font-size: 1rem;
@@ -1116,7 +1127,13 @@ textarea {
   }
   #contact .contact__title {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+  #contact .contact__title::before {
+    top: 11%;
+    left: 29%;
+    height: 60px;
+    width: 60px;
   }
   #contact .contact__form {
     margin: 0;
@@ -1124,7 +1141,7 @@ textarea {
     border-radius: 0;
     box-shadow: none;
     opacity: 1;
-    background-color: #262626;
+    background: linear-gradient(to right, #262626, #303030);
   }
   #contact .contact__form .text-input {
     color: #333;
@@ -1132,8 +1149,6 @@ textarea {
   }
   #contact button[type=submit] {
     width: 50%;
-    background-color: #333;
-    color: #262626;
     padding: 0.8rem 2rem;
   }
 }

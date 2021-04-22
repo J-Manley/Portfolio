@@ -43,7 +43,6 @@
     .navBar__icon {
       display: inline-block;
       margin-right: 0.5rem;
-      color: $primary-color;
       transition: transform 250ms ease;
 
       &:hover {
@@ -87,6 +86,13 @@
     .about__title {
       font-size: 3rem;
       margin-right: 0.5rem;
+
+      &::before {
+        top: 11%;
+        left: 31%;
+        height: 60px;
+        width: 60px;
+      }
     }
 
     .about__text {
@@ -102,6 +108,13 @@
       font-size: 3rem;
       margin-bottom: 3rem;
       padding-right: 0.5rem;
+
+      &::before {
+        top: 11%;
+        left: 32.5%;
+        height: 60px;
+        width: 60px;
+      }
     }
 
     .projects__text {
@@ -199,7 +212,14 @@
 
     .contact__title {
       font-size: 3rem;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+
+      &::before {
+        top: 11%;
+        left: 29%;
+        height: 60px;
+        width: 60px;
+      }
     }
 
     .contact__form {
@@ -208,17 +228,16 @@
       border-radius: 0;
       box-shadow: none;
       opacity: 1;
-      background-color: $primary-color;
+      background: linear-gradient(to right, $primary-color, #303030);
 
       .text-input {
         color: $secondary-color;
         border-bottom: 2px solid $secondary-color;
       }
     }
+
     button[type="submit"] {
       width: 50%;
-      background-color: $secondary-color;
-      color: $primary-color;
       padding: 0.8rem 2rem;
     }
   }
@@ -413,6 +432,7 @@
       display: none;
     }
   }
+
   #contact {
     scroll-margin-top: 150px;
     margin-bottom: 2rem;
