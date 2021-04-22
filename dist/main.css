@@ -1300,7 +1300,7 @@ textarea {
   }
   #contact .contact__title {
     font-size: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
   }
   #contact .contact__title::before {
     top: 11%;
@@ -1314,7 +1314,7 @@ textarea {
     border-radius: 0;
     box-shadow: none;
     opacity: 1;
-    background-color: #262626;
+    background: linear-gradient(to right, #262626, #303030);
   }
   #contact .contact__form .text-input {
     color: #333;

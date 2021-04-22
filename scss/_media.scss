@@ -423,7 +423,7 @@
 
     .contact__title {
       font-size: 3rem;
-      margin-bottom: 4rem;
+      margin-bottom: 1.5rem;
 
       &::before {
         top: 11%;
@@ -439,7 +439,7 @@
       border-radius: 0;
       box-shadow: none;
       opacity: 1;
-      background-color: $primary-color;
+      background: linear-gradient(to right, $primary-color, #303030);
 
       .text-input {
         color: $secondary-color;
