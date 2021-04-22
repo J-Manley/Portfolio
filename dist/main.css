@@ -1300,7 +1300,7 @@ textarea {
   }
   #contact .contact__title {
     font-size: 3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 4rem;
   }
   #contact .contact__title::before {
     top: 11%;
