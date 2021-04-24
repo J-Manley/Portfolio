@@ -531,6 +531,56 @@
   }
 }
 
+// Tech Section
+
+#tech {
+  margin-bottom: 10rem;
+  scroll-margin-top: 250px;
+
+  .tech__title {
+    color: $secondary-text-color;
+  }
+
+  .tech__subtitles {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .tech__used {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+
+    .tech__design {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    .tech__dev {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  }
+
+  .tech__logo {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+
+    > img {
+      width: auto;
+    }
+  }
+}
+
+// Contact Section
+
 #contact {
   padding-top: 10rem 0 6rem 0;
   scroll-margin-top: 120px;
