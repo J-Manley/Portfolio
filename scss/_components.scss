@@ -541,30 +541,33 @@
     color: $secondary-text-color;
   }
 
-  .tech__subtitles {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
   .tech__used {
     max-width: 600px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+
+    h4 {
+      margin-bottom: 1rem;
+    }
+
+    .tech__description {
+      display: flex;
+      margin-bottom: 1rem;
+    }
 
     .tech__design {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      align-items: center;
+      flex: 1 0 50%;
     }
 
     .tech__dev {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      align-items: center;
+      flex: 1 0 50%;
     }
   }
 
