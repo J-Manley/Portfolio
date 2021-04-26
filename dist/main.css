@@ -855,49 +855,9 @@ textarea {
   scroll-margin-top: 250px;
 }
 #tech .tech__used {
-  max-width: 300px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-#tech .tech__used p {
-  margin-left: 0.5rem;
-  align-self: center;
-}
-#tech .tech__used h4 {
-  margin-bottom: 1rem;
-  text-decoration: underline #f7e733;
-}
-#tech .tech__used .tech__description {
-  display: flex;
-  margin-bottom: 1rem;
-  align-content: center;
-}
-#tech .tech__used .tech__design {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 1 0 50%;
-  margin-left: 0.5rem;
-}
-#tech .tech__used .tech__design > h4 {
-  margin-left: 0.3rem;
-}
-#tech .tech__used .tech__design .tech__logo {
-  margin-right: 0.25rem;
-}
-#tech .tech__used .tech__design :nth-child(4) {
-  text-align: left;
-}
-#tech .tech__used .tech__dev {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 1 0 50%;
-  margin-left: 1.5rem;
-}
-#tech .tech__used .tech__dev .tech__logo {
-  margin-right: 0.5rem;
+  display: grid;
+  grid-template-areas: "design dev" "figma html tailwind" "adobe-xd css js" "adobe-ps sass react" ". " ".";
+  gap: 1.2rem;
 }
 #tech .tech__logo {
   display: inline-block;
