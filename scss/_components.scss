@@ -535,72 +535,6 @@
 
 #tech {
   margin-bottom: 10rem;
-  scroll-margin-top: 250px;
-
-  // .tech__text {
-  //   margin-right: 1rem;
-  // }
-
-  // .tech__used {
-  //   max-width: 300px;
-  //   margin: 0 auto;
-  //   display: flex;
-  //   justify-content: center;
-
-  //   p {
-  //     margin-left: 0.5rem;
-  //     align-self: center;
-  //   }
-
-  //   h4 {
-  //     margin-bottom: 1rem;
-  //     text-decoration: underline $accent-color;
-  //   }
-
-  //   .tech__design {
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: flex-start;
-  //     flex: 1 0 50%;
-  //     margin-left: 0.5rem;
-
-  //     > h4 {
-  //       margin-left: 0.3rem;
-  //     }
-
-  //     .tech__description {
-  //       display: flex;
-  //       margin-bottom: 1rem;
-  //       align-content: center;
-  //     }
-
-  //     & .tech__logo {
-  //       margin-right: 0.25rem;
-  //     }
-
-  //     & :nth-child(4) {
-  //       text-align: left;
-  //       line-height: 1.25;
-  //     }
-  //   }
-
-  //   .tech__dev {
-  //     display: grid;
-  //     grid-template-columns: repeat(3, 1fr);
-  //     column-gap: 10px;
-  //     row-gap: 1em;
-  //     margin-left: 1.5rem;
-
-  //     .tech__description {
-  //       align-self: center;
-  //       justify-self: center;
-  //     }
-
-  //     & .tech__logo {
-  //       margin-right: 0.5rem;
-  //     }
-  //   }
-  // }
 
   .tech__used {
     display: grid;
@@ -614,6 +548,8 @@
     margin: 0 auto;
 
     .tech__subtitle {
+      text-decoration: underline $accent-color;
+
       &--design {
         grid-area: design;
       }
@@ -686,11 +622,8 @@
 
   #react__logo {
     height: 38px;
-
-    img {
-      width: 100%;
-    }
   }
+
   p {
     align-self: center;
   }
