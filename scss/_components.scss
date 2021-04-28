@@ -605,27 +605,94 @@
   .tech__used {
     display: grid;
     grid-template-areas:
-      "design dev"
-      "figma html tailwind"
-      "adobe-xd css js"
-      "adobe-ps sass react"
-      ". "
-      ".";
-    gap: 1.2rem;
+      "design design dev dev"
+      ". figma html tailwind"
+      ". adobe-xd css js"
+      ". adobe-ps sass react";
+    row-gap: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+
+    .tech__subtitle {
+      &--design {
+        grid-area: design;
+      }
+
+      &--dev {
+        grid-area: dev;
+        margin-right: 4rem;
+      }
+    }
+
+    .tech__description {
+      display: flex;
+
+      &--1 {
+        grid-area: figma;
+      }
+
+      &--2 {
+        grid-area: adobe-xd;
+      }
+
+      &--3 {
+        grid-area: adobe-ps;
+      }
+
+      &--4 {
+        grid-area: html;
+        margin-left: 1rem;
+      }
+
+      &--5 {
+        grid-area: css;
+        margin-left: 1rem;
+      }
+
+      &--6 {
+        grid-area: sass;
+        margin-left: 1rem;
+      }
+
+      &--7 {
+        grid-area: tailwind;
+      }
+
+      &--8 {
+        grid-area: js;
+      }
+
+      &--9 {
+        grid-area: react;
+      }
+    }
   }
 
   .tech__logo {
     display: inline-block;
     width: 35px;
     height: 35px;
+    margin-right: 0.75rem;
 
     > img {
       width: auto;
     }
   }
+
+  #sass__logo {
+    height: 32px;
+    overflow: hidden;
+  }
+
   #react__logo {
-    height: 40px;
-    width: auto;
+    height: 38px;
+
+    img {
+      width: 100%;
+    }
+  }
+  p {
+    align-self: center;
   }
 }
 

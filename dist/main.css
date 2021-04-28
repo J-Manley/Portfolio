@@ -856,20 +856,72 @@ textarea {
 }
 #tech .tech__used {
   display: grid;
-  grid-template-areas: "design dev" "figma html tailwind" "adobe-xd css js" "adobe-ps sass react" ". " ".";
-  gap: 1.2rem;
+  grid-template-areas: "design design dev dev" ". figma html tailwind" ". adobe-xd css js" ". adobe-ps sass react";
+  row-gap: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#tech .tech__used .tech__subtitle--design {
+  grid-area: design;
+}
+#tech .tech__used .tech__subtitle--dev {
+  grid-area: dev;
+  margin-right: 4rem;
+}
+#tech .tech__used .tech__description {
+  display: flex;
+}
+#tech .tech__used .tech__description--1 {
+  grid-area: figma;
+}
+#tech .tech__used .tech__description--2 {
+  grid-area: adobe-xd;
+}
+#tech .tech__used .tech__description--3 {
+  grid-area: adobe-ps;
+}
+#tech .tech__used .tech__description--4 {
+  grid-area: html;
+  margin-left: 1rem;
+}
+#tech .tech__used .tech__description--5 {
+  grid-area: css;
+  margin-left: 1rem;
+}
+#tech .tech__used .tech__description--6 {
+  grid-area: sass;
+  margin-left: 1rem;
+}
+#tech .tech__used .tech__description--7 {
+  grid-area: tailwind;
+}
+#tech .tech__used .tech__description--8 {
+  grid-area: js;
+}
+#tech .tech__used .tech__description--9 {
+  grid-area: react;
 }
 #tech .tech__logo {
   display: inline-block;
   width: 35px;
   height: 35px;
+  margin-right: 0.75rem;
 }
 #tech .tech__logo > img {
   width: auto;
 }
+#tech #sass__logo {
+  height: 32px;
+  overflow: hidden;
+}
 #tech #react__logo {
-  height: 40px;
-  width: auto;
+  height: 38px;
+}
+#tech #react__logo img {
+  width: 100%;
+}
+#tech p {
+  align-self: center;
 }
 
 #contact {
