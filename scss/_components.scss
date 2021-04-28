@@ -621,7 +621,11 @@
   }
 
   #react__logo {
-    height: 38px;
+    height: 37px;
+
+    > img {
+      width: 100%;
+    }
   }
 
   p {
