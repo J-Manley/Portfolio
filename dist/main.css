@@ -791,7 +791,7 @@ textarea {
   height: 40px;
   transform: translate(-50%, -55%);
   border-radius: 5px;
-  font-size: 1.875rem;
+  font-size: 1.8rem;
   line-height: 2.25rem;
   border: 2px solid #333;
   background-color: #333;
@@ -808,7 +808,7 @@ textarea {
   height: 40px;
   transform: translate(-50%, -60%);
   border-radius: 5px;
-  font-size: 1.875rem;
+  font-size: 1.8rem;
   line-height: 2.25rem;
   border: 2px solid #333;
   background-color: #333;
@@ -825,7 +825,7 @@ textarea {
   height: 40px;
   transform: translate(-50%, -60%);
   border-radius: 5px;
-  font-size: 1.875rem;
+  font-size: 1.8rem;
   line-height: 2.25rem;
   border: 2px solid #333;
   background-color: #333;
@@ -842,7 +842,7 @@ textarea {
   height: 40px;
   transform: translate(-50%, -60%);
   border-radius: 5px;
-  font-size: 1.875rem;
+  font-size: 1.8rem;
   line-height: 2.25rem;
   border: 2px solid #333;
   background-color: #333;
@@ -867,8 +867,9 @@ textarea {
 #tech .tech__logo > img {
   width: auto;
 }
-#tech #sass__logo {
-  height: 32px;
+#tech #react__logo {
+  height: 40px;
+  width: auto;
 }
 
 #contact {
