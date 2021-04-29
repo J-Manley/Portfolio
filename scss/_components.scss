@@ -23,7 +23,7 @@
   }
 
   &__inner {
-    background-color: $primary-color;
+    background-color: $secondary-text-color;
     border: 2px solid $accent-color;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -105,14 +105,14 @@
 
       .fa-arrow-right {
         opacity: 1;
-        animation: in 600ms ease;
+        animation: arrow-in 600ms ease;
         animation-fill-mode: forwards;
       }
     }
 
     .fa-arrow-right {
       opacity: 0;
-      animation: out 250ms ease;
+      animation: arrow-out 250ms ease;
     }
 
     &::after {
@@ -142,7 +142,7 @@
   }
 }
 
-@keyframes in {
+@keyframes arrow-in {
   from {
     transform: translateX(-100%) scale(0);
   }
@@ -151,7 +151,7 @@
   }
 }
 
-@keyframes out {
+@keyframes arrow-out {
   from {
     transform: translateX(100%) scale(1.5);
     opacity: 1;
@@ -159,10 +159,6 @@
   to {
     transform: translateX(650%) scale(1.5);
   }
-}
-
-.active {
-  border-bottom: 2px solid $accent-color;
 }
 
 .fade-in {

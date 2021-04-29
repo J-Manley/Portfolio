@@ -61,11 +61,13 @@ for (let i = 0; i < closeBtn.length; i++) {
   });
 }
 
-// Hide modal on outside click
 for (let i = 0; i < modals.length; i++) {
-  window.addEventListener("click", (e) =>
-    e.target === modals[i] ? modals[i].classList.remove("show-modal") : false
-  );
+  window.addEventListener("click", (e) => {
+    if (e.target === modals[i]) {
+      modals[i].classList.remove("show-modal");
+      body.style.overflowY = "visible";
+    }
+  });
 }
 
 for (let i = 0; i < modals.length; i++) {
