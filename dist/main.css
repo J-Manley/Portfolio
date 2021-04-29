@@ -856,6 +856,7 @@ textarea {
 
 #tech {
   margin-bottom: 10rem;
+  scroll-margin-top: 200px;
 }
 #tech .tech__used {
   display: grid;
@@ -1272,6 +1273,9 @@ textarea {
     padding: 0;
   }
   #navBar > ul > li::after {
+    display: none;
+  }
+  #navBar > ul li:nth-of-type(3) {
     display: none;
   }
 

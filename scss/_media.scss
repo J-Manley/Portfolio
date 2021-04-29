@@ -296,6 +296,10 @@
           display: none;
         }
       }
+
+      li:nth-of-type(3) {
+        display: none;
+      }
     }
   }
 
