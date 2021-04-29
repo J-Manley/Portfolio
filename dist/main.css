@@ -1319,6 +1319,7 @@ textarea {
 
   #projects {
     scroll-margin-top: 100px;
+    margin-bottom: 3rem;
   }
   #projects .projects__title {
     font-size: 3rem;
@@ -1396,6 +1397,9 @@ textarea {
     display: none;
   }
 
+  #tech {
+    margin-bottom: 8rem;
+  }
   #tech .tech__used {
     grid-template-areas: "design design dev dev" ". figma html html" ". adobe-xd css css" ". adobe-ps sass sass" ". . tailwind tailwind" ". . js js" ". . react react";
     gap: 0.75rem 1rem;

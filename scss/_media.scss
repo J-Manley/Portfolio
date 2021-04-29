@@ -343,6 +343,7 @@
 
   #projects {
     scroll-margin-top: 100px;
+    margin-bottom: 3rem;
 
     .projects__title {
       font-size: 3rem;
@@ -438,6 +439,7 @@
   }
 
   #tech {
+    margin-bottom: 8rem;
     .tech__used {
       grid-template-areas:
         "design design dev dev"
