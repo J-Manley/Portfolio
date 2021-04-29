@@ -1453,9 +1453,11 @@ textarea {
   #contact .mobile__social {
     display: flex;
     justify-content: center;
+    margin-left: 1.5rem;
   }
   #contact .mobile__social .navBar__icon {
-    margin-right: 1.5rem;
+    margin-right: 2rem;
+    font-size: 1.75rem;
   }
 
   #footer .footer__content {
