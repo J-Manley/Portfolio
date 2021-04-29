@@ -1398,7 +1398,7 @@ textarea {
   }
 
   #tech {
-    margin-bottom: 8rem;
+    margin-bottom: 7rem;
   }
   #tech .tech__used {
     grid-template-areas: "design design dev dev" ". figma html html" ". adobe-xd css css" ". adobe-ps sass sass" ". . tailwind tailwind" ". . js js" ". . react react";
