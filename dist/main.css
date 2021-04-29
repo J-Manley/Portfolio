@@ -866,6 +866,7 @@ textarea {
   display: grid;
   grid-template-areas: "design design dev dev" ". figma html tailwind" ". adobe-xd css js" ". adobe-ps sass react";
   row-gap: 1.2rem;
+  gap: 1.2rem 1rem;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -877,7 +878,7 @@ textarea {
 }
 #tech .tech__used .tech__subtitle--dev {
   grid-area: dev;
-  margin-right: 4rem;
+  margin-right: 3rem;
 }
 #tech .tech__used .tech__description {
   display: flex;
@@ -1004,6 +1005,9 @@ textarea {
   color: #333;
   font-family: "Poppins", helvetica, sans-serif;
   transition: opacity, color, 250ms ease, background-color 400ms ease;
+}
+#contact .mobile__social {
+  display: none;
 }
 
 #footer {
@@ -1397,7 +1401,7 @@ textarea {
     grid-template-areas: "design design dev dev" ". figma html html" ". adobe-xd css css" ". adobe-ps sass sass" ". . tailwind tailwind" ". . js js" ". . react react";
   }
   #tech .tech__used .tech__subtitle--design {
-    margin-right: 3.5rem;
+    margin-right: 1.5rem;
   }
   #tech .tech__used .tech__subtitle--dev {
     margin-right: 2.5rem;
@@ -1441,6 +1445,13 @@ textarea {
   }
   #contact button[type=submit] {
     width: 50%;
+  }
+  #contact .mobile__social {
+    display: flex;
+    justify-content: center;
+  }
+  #contact .mobile__social .navBar__icon {
+    margin-right: 1.5rem;
   }
 
   #footer .footer__content {

@@ -450,7 +450,7 @@
 
       .tech__subtitle {
         &--design {
-          margin-right: 3.5rem;
+          margin-right: 1.5rem;
         }
 
         &--dev {
@@ -511,8 +511,18 @@
         border-bottom: 2px solid $secondary-color;
       }
     }
+
     button[type="submit"] {
       width: 50%;
+    }
+
+    .mobile__social {
+      display: flex;
+      justify-content: center;
+
+      .navBar__icon {
+        margin-right: 1.5rem;
+      }
     }
   }
 
