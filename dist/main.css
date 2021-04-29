@@ -403,8 +403,7 @@ textarea {
   right: 0;
   bottom: 0;
   z-index: 5;
-  animation-name: modal-open;
-  animation-duration: 1s;
+  animation: modal-opacity 500ms, modal-scale 350ms;
 }
 .modal .modal__btn--close {
   background: transparent;
@@ -450,12 +449,20 @@ textarea {
   display: block;
 }
 
-@keyframes modal-open {
+@keyframes modal-opacity {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes modal-scale {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
   }
 }
 .btn__secondary, .btn__main {
