@@ -161,6 +161,10 @@
   }
 }
 
+.active {
+  border-bottom: 2px solid $accent-color;
+}
+
 .fade-in {
   opacity: 0;
   transition: opacity 250ms ease-in;

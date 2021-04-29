@@ -533,6 +533,10 @@ textarea {
     transform: translateX(650%) scale(1.5);
   }
 }
+.active {
+  border-bottom: 2px solid #f7e733;
+}
+
 .fade-in {
   opacity: 0;
   transition: opacity 250ms ease-in;
