@@ -21,7 +21,6 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
 svg {
@@ -432,6 +431,9 @@ textarea {
 .modal__inner .modal__content {
   border: 1px solid #f7e733;
 }
+.modal__inner .modal__content > img {
+  display: block;
+}
 .modal__btn--close {
   background: transparent;
   border: none;
@@ -700,6 +702,7 @@ textarea {
 .projects__card__left > img {
   border-radius: 5px;
   border: 2px solid #f7e733;
+  display: block;
 }
 .projects__card__left::before {
   content: "";

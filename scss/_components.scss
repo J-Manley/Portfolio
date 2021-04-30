@@ -38,6 +38,10 @@
 
     & .modal__content {
       border: 1px solid $accent-color;
+
+      > img {
+        display: block;
+      }
     }
   }
 
@@ -358,6 +362,7 @@
   > img {
     border-radius: 5px;
     border: 2px solid $accent-color;
+    display: block;
   }
 
   &::before {
