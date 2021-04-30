@@ -1070,11 +1070,21 @@ textarea {
     color: #262626;
   }
 
+  #navBar {
+    padding: 0 1.5rem;
+    justify-content: unset;
+  }
   #navBar .navBar__logo svg {
     max-width: 75%;
     max-height: 75%;
   }
+  #navBar > ul {
+    margin-left: 2.5rem;
+  }
   #navBar > ul > li::after {
+    display: none;
+  }
+  #navBar .navBar__social {
     display: none;
   }
   #navBar .navBar__icon {
@@ -1243,7 +1253,13 @@ textarea {
     padding: 0.8rem 2rem;
   }
   #contact .mobile__social {
-    display: none;
+    display: flex;
+    justify-content: center;
+    margin-left: 1.5rem;
+  }
+  #contact .mobile__social .navBar__icon {
+    margin-right: 2rem;
+    font-size: 1.75rem;
   }
 }
 @media (max-width: 500px) {
@@ -1277,9 +1293,6 @@ textarea {
     max-width: 75%;
     max-height: 75%;
   }
-  #navBar .navBar__social {
-    display: none;
-  }
   #navBar > ul {
     margin: 0;
   }
@@ -1290,6 +1303,9 @@ textarea {
     display: none;
   }
   #navBar > ul li:nth-of-type(3) {
+    display: none;
+  }
+  #navBar .navBar__social {
     display: none;
   }
 

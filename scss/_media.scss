@@ -26,6 +26,9 @@
   }
 
   #navBar {
+    padding: 0 1.5rem;
+    justify-content: unset;
+
     & .navBar__logo {
       svg {
         max-width: 75%;
@@ -34,12 +37,19 @@
     }
 
     > ul {
+      margin-left: 2.5rem;
+
       > li {
         &::after {
           display: none;
         }
       }
     }
+
+    .navBar__social {
+      display: none;
+    }
+
     .navBar__icon {
       display: inline-block;
       margin-right: 0.5rem;
@@ -242,7 +252,14 @@
     }
 
     .mobile__social {
-      display: none;
+      display: flex;
+      justify-content: center;
+      margin-left: 1.5rem;
+
+      .navBar__icon {
+        margin-right: 2rem;
+        font-size: 1.75rem;
+      }
     }
   }
 }
@@ -286,10 +303,6 @@
       }
     }
 
-    .navBar__social {
-      display: none;
-    }
-
     > ul {
       margin: 0;
 
@@ -304,6 +317,10 @@
       li:nth-of-type(3) {
         display: none;
       }
+    }
+
+    .navBar__social {
+      display: none;
     }
   }
 
