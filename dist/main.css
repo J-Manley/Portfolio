@@ -574,7 +574,7 @@ textarea {
   transition: opacity, box-shadow, 250ms ease;
 }
 #navBar.navBar--scrolled {
-  box-shadow: 0 3px 20px rgba(247, 231, 51, 0.2);
+  box-shadow: 0 3px 20px rgba(238, 219, 9, 0.2);
   opacity: 0.95;
 }
 #navBar ul {
