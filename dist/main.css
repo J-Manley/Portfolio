@@ -620,6 +620,9 @@ textarea {
 #navBar .navBar__icon:hover .fa-twitter {
   color: #1da1f2;
 }
+#navBar .navBar__icon:hover .fa-envelope {
+  color: #f7e733;
+}
 
 #hero {
   height: 100vh;
