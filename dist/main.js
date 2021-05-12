@@ -1,23 +1,62 @@
-const faders = document.querySelectorAll(".fade-in");
+const navBar = document.querySelector("#navBar");
+const hero = document.querySelector(".hero__content");
 
-const appearOptions = {
-  threshold: 0,
+const navOptions = {
+  rootMargin: "-549px 0px 0px 0px",
+};
+
+const navObserver = new IntersectionObserver((entries, navObserver) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      navBar.classList.add("navBar--scrolled");
+    } else {
+      navBar.classList.remove("navBar--scrolled");
+    }
+  });
+}, navOptions);
+
+navObserver.observe(hero);
+
+const faders = document.querySelectorAll(".fade__in");
+
+const fadeInOptions = {
   rootMargin: "0px 0px -350px 0px",
 };
 
-const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
+const fadeInScroll = new IntersectionObserver((entries, fadeInScroll) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
       return;
     } else {
-      entry.target.classList.add("appear");
-      appearOnScroll.unobserve(entry.target);
+      entry.target.classList.add("f-appear");
+      fadeInScroll.unobserve(entry.target);
     }
   });
-}, appearOptions);
+}, fadeInOptions);
 
 faders.forEach((fader) => {
-  appearOnScroll.observe(fader);
+  fadeInScroll.observe(fader);
+});
+
+const sliders = document.querySelectorAll(".slide__in");
+
+const slideInOptions = {
+  rootMargin: "0px 0px -350px 0px",
+};
+
+const slideInScroll = new IntersectionObserver((entries, slideInScroll) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("sl-appear");
+      slideInScroll.unobserve(entry.target);
+    }
+  });
+}, slideInOptions);
+
+sliders.forEach((slide) => {
+  slideInScroll.observe(slide);
 });
 
 const cards = document.querySelectorAll(".projects__cards");

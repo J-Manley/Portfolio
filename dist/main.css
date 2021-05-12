@@ -543,12 +543,22 @@ textarea {
     transform: translateX(650%) scale(1.5);
   }
 }
-.fade-in {
+.fade__in {
   opacity: 0;
   transition: opacity 250ms ease-in;
 }
-.fade-in.appear {
+.fade__in.f-appear {
   opacity: 1;
+}
+
+.slide__in {
+  opacity: 0;
+  transition: opacity, transform, 250ms ease-in;
+  transform: translateY(10%);
+}
+.slide__in.sl-appear {
+  opacity: 1;
+  transform: translateY(0%);
 }
 
 #navBar {
@@ -561,6 +571,11 @@ textarea {
   top: 0;
   z-index: 4;
   padding: 0.5rem 5rem;
+  transition: opacity, box-shadow, 250ms ease;
+}
+#navBar.navBar--scrolled {
+  box-shadow: 0 3px 20px rgba(247, 231, 51, 0.2);
+  opacity: 0.95;
 }
 #navBar ul {
   display: flex;
@@ -875,6 +890,7 @@ textarea {
   gap: 1.2rem 1rem;
   max-width: 600px;
   margin: 0 auto;
+  padding-bottom: 1rem;
 }
 #tech .tech__used .tech__subtitle {
   text-decoration: underline #f7e733;
