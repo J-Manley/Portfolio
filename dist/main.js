@@ -20,7 +20,7 @@ navObserver.observe(hero);
 const faders = document.querySelectorAll(".fade__in");
 
 const fadeInOptions = {
-  rootMargin: "0px 0px -350px 0px",
+  rootMargin: "0px 0px -150px 0px",
 };
 
 const fadeInScroll = new IntersectionObserver((entries, fadeInScroll) => {
