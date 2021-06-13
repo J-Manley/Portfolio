@@ -7,7 +7,7 @@
   <title>Joel Manley | Web Developer</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="main.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
@@ -16,7 +16,7 @@
   <!-- Navbar -->
   <nav id="navBar">
     <div class="navBar__logo">
-      <a href="#home">
+      <a href="/">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           width="80px" height="80px" x="0px" y="0px" viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;"
           xml:space="preserve">
@@ -119,7 +119,7 @@
           <div class="projects__tech p-1">
             <div class="projects__design">
               <p>Designed with:</p>
-              <div class="projects__logo"><img src="./img/figma.png" alt="figma logo" title="Figma" /></div>
+              <div class="projects__logo"><img src="./img/figma-logo.png" alt="figma logo" title="Figma" /></div>
             </div>
             <div class="projects__built">
               <p>Built with:</p>
@@ -156,7 +156,7 @@
           <div class="projects__tech p-1">
             <div class="projects__design">
               <p>Designed with:</p>
-              <div class="projects__logo"><img src="./img/figma.png" alt="figma logo" title="Figma" /></div>
+              <div class="projects__logo"><img src="./img/figma-logo.png" alt="figma logo" title="Figma" /></div>
             </div>
             <div class="projects__built">
               <p>Built with:</p>
@@ -193,7 +193,7 @@
           <div class="projects__tech p-1">
             <div class="projects__design">
               <p>Designed with:</p>
-              <div class="projects__logo"><img src="./img/figma.png" alt="figma logo" title="Figma" /></div>
+              <div class="projects__logo"><img src="./img/figma-logo.png" alt="figma logo" title="Figma" /></div>
             </div>
             <div class="projects__built">
               <p>Built with:</p>
@@ -229,11 +229,11 @@
       <div class="tech__used slide__in">
         <h4 class="tech__subtitle tech__subtitle--design text-lg">Design</h4>
         <div class="tech__description tech__description--1">
-          <div class="tech__logo"><img src="./img/figma.png" alt="figma" title="Figma" /></div>
+          <div class="tech__logo"><img src="./img/figma-logo.png" alt="figma" title="Figma" /></div>
           <p>Figma</p>
         </div>
         <div class="tech__description tech__description--2">
-          <div class="tech__logo"><img src="./img/adobe-xd.png" alt="adobe xd logo" title="Adobe XD" /></div>
+          <div class="tech__logo"><img src="./img/adobe-xd-logo.png" alt="adobe xd logo" title="Adobe XD" /></div>
           <p>Adobe XD</p>
         </div>
         <div class="tech__description tech__description--3">
@@ -264,7 +264,8 @@
           <p>Javascript</p>
         </div>
         <div class="tech__description tech__description--9">
-          <div class="tech__logo" id="react__logo"><img src="./img/react.png" alt="react logo" title="React" /></div>
+          <div class="tech__logo" id="react__logo"><img src="./img/react-logo.png" alt="React logo" title="React" />
+          </div>
           <p>React</p>
         </div>
       </div>
@@ -275,7 +276,7 @@
   <!-- Contact -->
   <section id="contact" class="contact text-center mb-4">
     <div class="container fade__in">
-      <h2 class="contact__title text-6xl mb-5">Contact Me</h2> <!-- Change to h4-->
+      <h4 class="contact__title text-6xl mb-5">Contact Me</h4>
       <form class="contact__form" method="POST" data-netlify="true" data-netlify-recaptcha="true">
         <div class="contact__form__text-fields pt-2">
           <label for="name" class="text-sm">Name</label>
@@ -290,7 +291,7 @@
             <div data-netlify-recaptcha="true"></div>
           </div>
         </div>
-        <button type="submit" class="btn__secondary mb-2 text-lg"><span>Send </span><i
+        <button type="submit" class="btn__secondary mb-2 text-lg" aria-label="Send Message"><span>Send </span><i
             class="fas fa-paper-plane"></i></button>
       </form>
     </div>
@@ -302,6 +303,7 @@
         class="navBar__icon" alt="linkedin"><i class="fab fa-linkedin"></i></a>
       <a href="https://twitter.com/JoelAManley" target="_blank" rel="noopener noreferrer" class="navBar__icon"
         alt="twitter"><i class="fab fa-twitter"></i></a>
+      <a href="mailto:joel@joelmanley.dev" class="navBar__icon" alt="email"><i class="far fa-envelope fa-1x"></i></a>
     </div>
   </section>
   <!-- Footer -->
@@ -320,7 +322,7 @@
   <!-- Modals -->
   <div class="modal modal--1">
     <div class="modal__inner">
-      <button class="modal__btn modal__btn--close">
+      <button class="modal__btn modal__btn--close" aria-label="Close Modal">
         <i class="fa fa-times fa-2x"></i>
       </button>
       <div class="modal__content mt-1">
@@ -330,7 +332,7 @@
   </div>
   <div class="modal modal--2">
     <div class="modal__inner">
-      <button class="modal__btn modal__btn--close">
+      <button class="modal__btn modal__btn--close" aria-label="Close Modal">
         <i class="fa fa-times fa-2x"></i>
       </button>
       <div class="modal__content mt-1">
@@ -340,7 +342,7 @@
   </div>
   <div class="modal modal--3">
     <div class="modal__inner">
-      <button class="modal__btn modal__btn--close">
+      <button class="modal__btn modal__btn--close" aria-label="Close Modal">
         <i class="fa fa-times fa-2x"></i>
       </button>
       <div class="modal__content mt-1">

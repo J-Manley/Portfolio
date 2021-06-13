@@ -205,7 +205,7 @@
   position: sticky;
   top: 0;
   z-index: 4;
-  padding: 0.5rem 5rem;
+  padding: 0.5rem 2.5rem;
   transition: opacity, box-shadow, 250ms ease;
 
   &.navBar--scrolled {
@@ -215,7 +215,7 @@
 
   ul {
     display: flex;
-    margin-left: 1.5rem;
+    margin-left: 5rem;
 
     li {
       padding: 0.5rem;
