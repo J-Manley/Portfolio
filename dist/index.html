@@ -261,7 +261,7 @@
   <section id="contact" class="contact text-center mb-4">
     <div class="container fade__in">
       <h4 class="contact__title text-6xl mb-5">Contact Me</h4>
-      <form class="contact__form" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+      <form class="contact__form" name="contact" method="POST" data-netlify="true">
         <div class="contact__form__text-fields pt-2">
           <label for="name" class="text-sm">Name</label>
           <input type="text" class="text-input name-input mb-1" placeholder="Enter Name" name="name" />
@@ -271,9 +271,6 @@
           <input type="text" class="text-input phone-input mb-1" placeholder="Enter Phone No." name="phone" />
           <label for="message" class="text-sm">Message</label>
           <textarea class="text-input message-input" placeholder="Enter Message" name="message"></textarea>
-          <div class="my-1">
-            <div data-netlify-recaptcha="true"></div>
-          </div>
         </div>
         <button type="submit" class="btn__secondary mb-2 text-lg" aria-label="Send Message"><span>Send </span><i
             class="fas fa-paper-plane"></i></button>
