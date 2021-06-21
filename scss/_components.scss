@@ -365,8 +365,7 @@
       }
       .projects__card--1::after,
       .projects__card--2::after,
-      .projects__card--3::after,
-      .projects__card--4::after {
+      .projects__card--3::after {
         opacity: 0;
       }
     }
@@ -498,7 +497,7 @@
     left: 50%;
     width: 150px;
     height: 40px;
-    transform: translate(-50%, -55%);
+    transform: translate(-50%, -50%);
     border-radius: 5px;
     font-size: 1.8rem;
     line-height: 2.25rem;
@@ -513,18 +512,18 @@
   &::after {
     content: "Project 2";
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     width: 150px;
     height: 40px;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -50%);
     border-radius: 5px;
     font-size: 1.8rem;
     line-height: 2.25rem;
     border: 2px solid $secondary-color;
     background-color: $secondary-color;
     color: $primary-text-color;
-    transition: opacity 450ms ease;
+    transition: opacity 400ms ease;
   }
 }
 
@@ -532,37 +531,18 @@
   &::after {
     content: "Project 3";
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     width: 150px;
     height: 40px;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -50%);
     border-radius: 5px;
     font-size: 1.8rem;
     line-height: 2.25rem;
     border: 2px solid $secondary-color;
     background-color: $secondary-color;
     color: $primary-text-color;
-    transition: opacity 450ms ease;
-  }
-}
-
-.projects__card--4 {
-  &::after {
-    content: "Project 4";
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    width: 150px;
-    height: 40px;
-    transform: translate(-50%, -60%);
-    border-radius: 5px;
-    font-size: 1.8rem;
-    line-height: 2.25rem;
-    border: 2px solid $secondary-color;
-    background-color: $secondary-color;
-    color: $primary-text-color;
-    transition: opacity 450ms ease;
+    transition: opacity 400ms ease;
   }
 }
 
