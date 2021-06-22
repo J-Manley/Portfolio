@@ -427,7 +427,7 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .projects__logo {
@@ -528,6 +528,14 @@
   }
 }
 
+.projects__card--3a {
+  .projects__tech {
+    .projects__built div:nth-of-type(3) {
+      margin-right: 0.85rem;
+    }
+  }
+}
+
 // Tech Section
 
 #tech {
@@ -537,12 +545,12 @@
   .tech__used {
     display: grid;
     grid-template-areas:
-      "design design dev dev"
-      ". figma html tailwind"
-      ". adobe-xd css js"
-      ". adobe-ps sass react";
+      "design design dev dev dev"
+      ". figma html tailwind npm"
+      ". adobe-xd css js alpine"
+      ". adobe-ps sass react git";
     gap: 1.2rem 1rem;
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
     padding-bottom: 1rem;
 
@@ -555,7 +563,6 @@
 
       &--dev {
         grid-area: dev;
-        margin-right: 3rem;
       }
     }
 
@@ -599,6 +606,31 @@
 
       &--9 {
         grid-area: react;
+      }
+
+      &--10 {
+        grid-area: npm;
+        .tech__logo {
+          width: unset;
+          height: 20px;
+          align-self: center;
+        }
+      }
+
+      &--11 {
+        grid-area: alpine;
+        .tech__logo {
+          width: unset;
+          height: 25px;
+          align-self: center;
+        }
+      }
+
+      &--12 {
+        grid-area: git;
+        .tech__logo {
+          margin-left: 0.4rem;
+        }
       }
     }
   }
