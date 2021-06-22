@@ -22,7 +22,7 @@
   }
 
   &__inner {
-    background-color: $secondary-text-color;
+    background-color: $modal-color;
     border: 2px solid $accent-color;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -31,14 +31,12 @@
     top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 750px;
+    max-width: 1000px;
     width: 100%;
     padding: 3rem;
     padding-top: 2rem;
 
     & .modal__content {
-      border: 1px solid $accent-color;
-
       > img {
         display: block;
       }
@@ -56,7 +54,7 @@
     transition: color 200ms ease;
 
     &:hover {
-      color: $accent-color;
+      color: #555;
     }
   }
 
@@ -374,7 +372,7 @@
 
 .projects__card__left {
   position: absolute;
-  height: 430px;
+  height: 440px;
   max-width: 525px;
   z-index: 2;
   transition: transform 750ms ease;
@@ -402,7 +400,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 430px;
+  height: 440px;
   max-width: 525px;
   width: 100%;
   background: linear-gradient(to right, $secondary-color, #3d3d3d);
@@ -421,7 +419,7 @@
 .projects__card__text {
   max-width: 450px;
   margin: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   text-align: left;
 }
 
@@ -429,7 +427,7 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .projects__logo {
@@ -451,7 +449,7 @@
 }
 
 .projects__built div:nth-of-type(3) {
-  margin-right: 0.85rem;
+  margin-right: 0.1rem;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -461,42 +459,26 @@
     justify-content: space-evenly;
 
     &__link {
-      transition: opacity, color, 250ms ease, background-color 400ms ease;
+      transition: color, 250ms ease, background-color 400ms ease;
       max-width: 130px;
       width: 100%;
 
       &:hover {
         background-color: $accent-color;
         color: $primary-color;
-
-        > span {
-          padding-right: 10px;
-        }
       }
-    }
-
-    span {
-      transition: padding-right 250ms ease;
-    }
-
-    &__link svg {
-      transition: transform 250ms ease;
-    }
-
-    &__link:hover svg {
-      transform: scale(1.5);
     }
   }
 }
 
 .projects__card--1 {
   &::after {
-    content: "Project 1";
+    content: "Team Diamond";
     position: absolute;
     top: 45%;
     left: 50%;
     width: 150px;
-    height: 40px;
+    height: 75px;
     transform: translate(-50%, -50%);
     border-radius: 5px;
     font-size: 1.8rem;
@@ -510,12 +492,12 @@
 
 .projects__card--2 {
   &::after {
-    content: "Project 2";
+    content: "One More Bicycle";
     position: absolute;
     top: 50%;
     left: 50%;
     width: 150px;
-    height: 40px;
+    height: 75px;
     transform: translate(-50%, -50%);
     border-radius: 5px;
     font-size: 1.8rem;
@@ -529,12 +511,12 @@
 
 .projects__card--3 {
   &::after {
-    content: "Project 3";
+    content: "iGym Notes";
     position: absolute;
     top: 45%;
     left: 50%;
     width: 150px;
-    height: 40px;
+    height: 75px;
     transform: translate(-50%, -50%);
     border-radius: 5px;
     font-size: 1.8rem;
