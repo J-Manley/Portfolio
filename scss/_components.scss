@@ -546,8 +546,8 @@
     display: grid;
     grid-template-areas:
       "design design dev dev dev"
-      ". figma html tailwind npm"
-      ". adobe-xd css js alpine"
+      ". figma html tailwind alpine"
+      ". adobe-xd css js npm"
       ". adobe-ps sass react git";
     gap: 1.2rem 1rem;
     max-width: 650px;
@@ -609,19 +609,19 @@
       }
 
       &--10 {
-        grid-area: npm;
+        grid-area: alpine;
         .tech__logo {
           width: unset;
-          height: 20px;
+          height: 25px;
           align-self: center;
         }
       }
 
       &--11 {
-        grid-area: alpine;
+        grid-area: npm;
         .tech__logo {
           width: unset;
-          height: 25px;
+          height: 20px;
           align-self: center;
         }
       }
