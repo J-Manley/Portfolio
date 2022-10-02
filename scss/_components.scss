@@ -547,8 +547,9 @@
     grid-template-areas:
       "design design dev dev dev"
       ". figma html tailwind alpine"
-      ". adobe-xd css js npm"
-      ". adobe-ps sass react git";
+      ". adobe-ps css js npm"
+      ". . sass vue git"
+      ". . php mysql wp";
     gap: 1.2rem 1rem;
     max-width: 650px;
     margin: 0 auto;
@@ -568,6 +569,7 @@
 
     .tech__description {
       display: flex;
+      align-items: center;
 
       &--1 {
         grid-area: figma;
@@ -605,7 +607,7 @@
       }
 
       &--9 {
-        grid-area: react;
+        grid-area: vue;
       }
 
       &--10 {
@@ -632,6 +634,20 @@
           margin-left: 0.4rem;
         }
       }
+
+      &--13 {
+        grid-area: php;
+        margin-left: 1rem;
+      }
+
+      &--14 {
+        grid-area: mysql;
+      }
+
+      &--15 {
+        grid-area: wp;
+      }
+
     }
   }
 
@@ -650,9 +666,14 @@
     height: 32px;
     overflow: hidden;
   }
-
-  #react__logo {
-    height: 37px;
+  #php__logo {
+    height: 20px;
+  }
+  #wp__logo {
+    margin-left: 0.4rem;
+  }
+  #vue__logo {
+    height: 30px;
 
     > img {
       width: 100%;

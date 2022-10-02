@@ -473,23 +473,37 @@
 
     .tech__used {
       grid-template-areas:
-        "design design dev dev"
-        ". figma html html"
-        ". adobe-xd css css"
-        ". adobe-ps sass sass"
-        ". . tailwind tailwind"
-        ". . js js"
-        ". . react react"
-        ". . alpine alpine"
-        ". . npm npm"
-        ". . git git";
+        // "design design dev dev"
+        // ". figma html html"
+        // ". adobe-xd css css"
+        // ". adobe-ps sass sass"
+        // ". . tailwind tailwind"
+        // ". . js js"
+        // ". . vue vue"
+        // ". . alpine alpine"
+        // ". . npm npm"
+        // ". . git git"
+        // ". . php php"
+        // ". . mysql mysql"
+        // ". . wp wp";
+
+        "design . "
+        "figma adobe-ps "
+        ". ."
+        "dev . "
+        "html css"
+        "sass tailwind"
+        "js alpine"
+        "vue npm"
+        "git php"
+        "mysql wp";
       gap: 0.75rem 1rem;
 
       .tech__subtitle {
         margin-bottom: 1rem;
 
         &--design {
-          margin-right: 1.5rem;
+          margin-right: 6rem;
         }
 
         &--dev {
@@ -509,15 +523,23 @@
         &--5,
         &--6,
         &--7,
-        &--8,
+        &--8
         &--9,
         &--10,
         &--11,
-        &--12 {
-          margin-left: 1rem;
+        &--12, 
+        &--13, 
+        &--14, 
+        &--15 {
+          margin-left: unset;
         }
       }
 
+      .tech__description--7 {
+        p{
+          min-width: 101px;
+        }
+      }
       .tech__description--10 {
         .tech__logo {
           height: 22px;
@@ -529,6 +551,10 @@
           margin-left: unset;
         }
       }
+    }
+
+    #wp__logo{
+      margin-left: unset;
     }
   }
 
